@@ -1,0 +1,35 @@
+
+p {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+.madeby {
+    display: flex;
+    flex: 1 1 1;
+    flex-direction: column;
+    width: 10%;
+
+}
+.roxy {
+    font-size: 1rem;
+    text-align: left;
+    flex-direction: column
+}
+    .wave1, .wave2 {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -12%;
+}
+
+.footer-layout {
+    display: flex;
+    margin: 0px 30px;
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+}
+
