@@ -42,6 +42,38 @@ p {
     width: 150%
 }
 
+.welcome-page {
+    text-align: center; 
+}
+
+.search{
+    margin-top: 20px;
+}
+
+.search input[type="search"] {
+    border:solid 3px #000000;
+    box-sizing:border-box;
+    font-size:1.5em;
+    height:34px;    
+    outline:solid #fc0 0;
+    width:15vw;
+}
+
+button[type="submit"] {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    border-radius: 10px;
+    background-color: #afbcc9;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 789px) {
     .image-footer, .footer-layout {
         display: flex;
