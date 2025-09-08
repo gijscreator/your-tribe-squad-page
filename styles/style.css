@@ -7,15 +7,14 @@ p {
 }
 .madeby {
     display: flex;
-    flex: 1 1 1;
     flex-direction: column;
-    width: 10%;
 
 }
 .roxy {
     font-size: 1rem;
     text-align: left;
-    flex-direction: column
+    flex-direction: column;
+    margin-top: 10px;
 }
     .wave1, .wave2 {
     margin-left: -10px;
@@ -29,7 +28,7 @@ p {
 }
 
 .logo {
-    width: 40%;
+    width: 80%;
     height: auto;
 }
 
