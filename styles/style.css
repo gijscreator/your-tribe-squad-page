@@ -14,7 +14,7 @@ p {
     font-size: 1rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 15px;
 }
     .wave1, .wave2 {
     margin-left: -10px;
@@ -32,3 +32,38 @@ p {
     height: auto;
 }
 
+.image-footer {
+    width: 90%;
+    height: auto;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.logo-madeby {
+    width: 150%
+}
+
+@media only screen and (max-width: 789px) {
+    .image-footer, .footer-layout {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px
+    }
+    .madeby {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .roxy {
+        margin-top: 5px;
+    }
+
+} 
