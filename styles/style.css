@@ -13,11 +13,44 @@ h2{
 h3{
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 
 /*header styling*/
+header{
+    border-bottom: solid black 0.3rem;
+    margin-bottom: 5rem;
+}
+li, a{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+header li{
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+header li:hover{
+    background-color: #F5F1EA;
+}
+
+header img{
+    height: 5rem;
+    border-radius: 10px;
+}
+
+
 /*hero styling Semih*/
 
 /*Wave styling*/
@@ -29,6 +62,7 @@ h3{
 
 /*Mugshot styling Roxy*/
 .mugshot-article-container{
+    padding: 10rem; /*???*/
     text-align: center;
 }
 .mugshot-image-container{
@@ -42,6 +76,7 @@ h3{
     aspect-ratio: 1 / 1;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .mugshot h3{
