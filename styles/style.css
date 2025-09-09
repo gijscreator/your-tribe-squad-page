@@ -15,7 +15,6 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /*header styling*/
 header{
     border-bottom: solid black 0.3rem;
@@ -65,12 +64,14 @@ header img{
     padding: 10rem; /*???*/
     text-align: center;
 }
+
 .mugshot-image-container{
     width: 100%;
     height: auto;
     display: flex;
     gap: 1.5em;
 }
+
 .mugshot{
     width: 25%;
     aspect-ratio: 1 / 1;
@@ -111,7 +112,6 @@ header img{
     visibility: visible;
 }
 
-
 /*footer styling*/
 .madeby {
     display: flex;
@@ -144,6 +144,7 @@ header img{
 .logo-madeby {
     width: 150%
 }
+
 .wrapper-location,.location-image {
     display: flex;
     flex-direction: row;
@@ -152,6 +153,7 @@ header img{
     justify-content: center;
     width: auto;
 }
+
 .location-image {
         position: relative;
         width: 20%;
@@ -164,6 +166,7 @@ header img{
 .wrapper-location {
     margin-bottom: 10%;
 }
+
 img {
     object-fit: cover;
     object-position: 0%;
@@ -171,6 +174,17 @@ img {
     height: auto;
 }
 
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+}
 
 .welcome-page {
     text-align: center; 
@@ -204,8 +218,8 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-
 /* responsiveness*/
+
 @media only screen and (max-width: 789px) {
     .image-footer, .footer-layout {
         display: flex;
