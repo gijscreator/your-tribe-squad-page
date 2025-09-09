@@ -101,7 +101,7 @@ header img{
 }
 
 .mugshot::after{
-    content: url(/assets/mugshots/student-1-2.png);
+    content: '';
     visibility: hidden;
     display: block;
     position: absolute;
