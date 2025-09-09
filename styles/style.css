@@ -80,16 +80,6 @@ header img{
 
 }
 
-.mugshot:hover::after {
-  content: "";
-  position: absolute;
-  inset: 0; /* vult hele container */
-  background: radial-gradient(
-    circle at center, 
-    rgba(0,0,0,0) 50%,          
-    rgba(0,0,0,1) 100%);
-  pointer-events: none; /* snap niet wat dit is maar het werkte wel */
-}
 
 .mugshot img{
     position: absolute;
@@ -97,9 +87,6 @@ header img{
     transition: 0.5s ease-in-out;
 }
 
-.mugshot:hover img{
-    box-shadow: #000000;
-}
 
 .mugshot-first{
     opacity: 1;
@@ -108,6 +95,7 @@ header img{
 .mugshot-after{
     opacity: 0;
 }
+
 
 .mugshot h3{
     position: absolute;
@@ -126,16 +114,27 @@ header img{
     transition: 0.5s ease-in-out;
 }
 
+.mugshot:hover figcaption{
+    visibility: visible;
+}
+/*Mugshot styling Roxy --- schaduw effect op foto*/
+.mugshot:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* vult hele container / absoluut gepositioneerd https://developer.mozilla.org/en-US/docs/Web/CSS/inset*/
+    background: radial-gradient(
+        circle at center, 
+        rgba(0,0,0,0) 50%,          
+        rgba(0,0,0,1) 100%);
+    pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+}
+
 .mugshot-first:hover{
     opacity: 0;
 }
 
 .mugshot-after:hover{
     opacity: 1;
-}
-
-.mugshot:hover figcaption{
-    visibility: visible;
 }
 
 .eye-bar{
