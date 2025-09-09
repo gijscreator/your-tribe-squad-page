@@ -16,7 +16,6 @@ h3{
     margin: 0;
 }
 
-
 /*header styling*/
 /*hero styling Semih*/
 
@@ -31,12 +30,14 @@ h3{
 .mugshot-article-container{
     text-align: center;
 }
+
 .mugshot-image-container{
     width: 100%;
     height: auto;
     display: flex;
     gap: 1.5em;
 }
+
 .mugshot{
     width: 25%;
     aspect-ratio: 1 / 1;
@@ -76,7 +77,6 @@ h3{
     visibility: visible;
 }
 
-
 /*footer styling*/
 .madeby {
     display: flex;
@@ -109,6 +109,7 @@ h3{
 .logo-madeby {
     width: 150%
 }
+
 .wrapper-location,.location-image {
     display: flex;
     flex-direction: row;
@@ -117,6 +118,7 @@ h3{
     justify-content: center;
     width: auto;
 }
+
 .location-image {
         position: relative;
         width: 20%;
@@ -129,6 +131,7 @@ h3{
 .wrapper-location {
     margin-bottom: 10%;
 }
+
 img {
     object-fit: cover;
     object-position: 0%;
@@ -136,6 +139,17 @@ img {
     height: auto;
 }
 
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+}
 
 .welcome-page {
     text-align: center; 
@@ -168,7 +182,6 @@ button[type="submit"] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
 
 /* responsiveness*/
 @media only screen and (max-width: 789px) {
