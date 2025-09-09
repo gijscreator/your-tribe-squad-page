@@ -126,7 +126,7 @@ header img{
         circle at center, 
         rgba(0,0,0,0) 50%,          
         rgba(0,0,0,1) 100%);
-    pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+     pointer-events: none; /* snap niet wat dit is maar het werkte wel */
 }
 
 .mugshot-first:hover{
@@ -145,7 +145,7 @@ header img{
     left: 32%;
     width: 35%;
     height: 20px;/*????????????*/
-    opacity: 1;  
+    opacity: 0;  
     transition: 0.5s ease; 
 }
 
