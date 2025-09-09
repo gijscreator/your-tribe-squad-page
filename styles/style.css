@@ -117,7 +117,7 @@ header img{
 .mugshot:hover figcaption{
     visibility: visible;
 }
-/*Mugshot styling Roxy --- schaduw effect op foto*/
+
 .mugshot:hover::after {
     content: "";
     position: absolute;
@@ -141,11 +141,11 @@ header img{
     content: '';
     background-color: #000000;
     position: absolute;
-    top: 22%;
-    left: 35%;
-    width: 30%;
+    top: 24%;
+    left: 32%;
+    width: 35%;
     height: 20px;/*????????????*/
-    opacity: 0;  
+    opacity: 1;  
     transition: 0.5s ease; 
 }
 
@@ -160,6 +160,17 @@ header img{
 
 .glasses{
     top: 24%;
+}
+
+.load-more{
+    background-color: #F5F1EA;
+    border: solid black 3px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.load-more:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
 }
 
 /*footer styling*/
