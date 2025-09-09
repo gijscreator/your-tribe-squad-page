@@ -77,6 +77,36 @@ header img{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+
+}
+
+.mugshot:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* vult hele container */
+  background: radial-gradient(
+    circle at center, 
+    rgba(0,0,0,0) 50%,          
+    rgba(0,0,0,1) 100%);
+  pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+}
+
+.mugshot img{
+    position: absolute;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.mugshot:hover img{
+    box-shadow: #000000;
+}
+
+.mugshot-first{
+    opacity: 1;
+}
+
+.mugshot-after{
+    opacity: 0;
 }
 
 .mugshot h3{
@@ -93,12 +123,45 @@ header img{
 
 .mugshot figcaption{
     visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.mugshot-first:hover{
+    opacity: 0;
+}
+
+.mugshot-after:hover{
+    opacity: 1;
 }
 
 .mugshot:hover figcaption{
     visibility: visible;
 }
 
+.eye-bar{
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    width: 30%;
+    height: 20px;/*????????????*/
+    opacity: 0;  
+    transition: 0.5s ease; 
+}
+
+.mugshot:hover .eye-bar{
+    opacity: 1;
+}
+
+.angle{
+    top: 25%;
+    rotate: 15deg;
+}
+
+.glasses{
+    top: 24%;
+}
 
 /*footer styling*/
 .madeby {
