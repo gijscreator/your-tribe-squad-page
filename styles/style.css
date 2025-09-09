@@ -171,6 +171,7 @@ button[type="submit"] {
 
 
 /* responsiveness*/
+
 @media only screen and (max-width: 789px) {
     .image-footer, .footer-layout {
         display: flex;
