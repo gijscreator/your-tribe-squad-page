@@ -118,6 +118,10 @@ header img{
     visibility: visible;
 }
 
+article h1 {
+    font-size: 5em;
+}
+
 .mugshot:hover::after {
     content: "";
     position: absolute;
@@ -137,6 +141,23 @@ header img{
     opacity: 1;
 }
 
+article button {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+article button:hover {
+    background-color: rgb(175, 175, 175);
+    transition: 0.25s;
+}
+
 .eye-bar{
     content: '';
     background-color: #000000;
@@ -144,7 +165,7 @@ header img{
     top: 24%;
     left: 32%;
     width: 35%;
-    height: 20px;/*????????????*/
+    height: 12px;/*????????????*/
     opacity: 0;  
     transition: 0.5s ease; 
 }
