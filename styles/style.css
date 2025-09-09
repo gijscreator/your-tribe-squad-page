@@ -13,6 +13,7 @@ h2{
 h3{
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 /*header styling*/
@@ -61,19 +62,18 @@ header img{
 
 /*Mugshot styling Roxy*/
 .mugshot-article-container{
-    padding: 10rem; /*???*/
     text-align: center;
 }
 
 .mugshot-image-container{
-    width: 100%;
-    height: auto;
     display: flex;
-    gap: 1.5em;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
 }
 
 .mugshot{
-    width: 25%;
+    width: 15%;
     aspect-ratio: 1 / 1;
     position: relative;
     overflow: hidden;
@@ -81,36 +81,25 @@ header img{
 }
 
 .mugshot h3{
+    position: absolute;
     left: 10px;
     top: 10px;
-    position: absolute;
 }
 
 .mugshot p{
-    left: 10px;
-    top: 40px;
-    position: absolute;
+   position: absolute;
+   left: 10px; /*???????????*/
+   top: 35px; /*????????????*/
 }
 
-.mugshot p,h3{
+.mugshot figcaption{
     visibility: hidden;
 }
 
-.mugshot img{
-    width: 100%;
-}
-
-.mugshot::after{
-    content: '';
-    visibility: hidden;
-    display: block;
-    position: absolute;
-    top: 0;
-}
-
-.mugshot:hover::after{
+.mugshot:hover figcaption{
     visibility: visible;
 }
+
 
 /*footer styling*/
 .madeby {
@@ -244,9 +233,5 @@ button[type="submit"] {
         margin-top: 5px;
     }
 
-    /* poging tot */
-    .mugshot-image-container{
-        flex-direction: column;
-        align-items: center;
-    }
+    
 } 
