@@ -1,27 +1,95 @@
-
+/*overall styling*/
 p {
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     margin: 0;
 }
+
+h2{
+    font-size:1.8rem;
+}
+
+h3{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/*header styling*/
+/*hero styling Semih*/
+
+/*Wave styling*/
+.wave1, .wave2 {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -12%;
+}
+
+/*Mugshot styling Roxy*/
+.mugshot-article-container{
+    text-align: center;
+}
+.mugshot-image-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1.5em;
+}
+.mugshot{
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.mugshot h3{
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.mugshot p{
+    left: 10px;
+    top: 40px;
+    position: absolute;
+}
+
+.mugshot p,h3{
+    visibility: hidden;
+}
+
+.mugshot img{
+    width: 100%;
+}
+
+.mugshot::after{
+    content: url(/assets/mugshots/student-1-2.png);
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.mugshot:hover::after{
+    visibility: visible;
+}
+
+
+/*footer styling*/
 .madeby {
     display: flex;
     flex-direction: column;
-
 }
+
 .roxy {
     font-size: 1rem;
     text-align: left;
     flex-direction: column;
     margin-top: 15px;
 }
-    .wave1, .wave2 {
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: -12%;
-}
-
+    
 .footer-layout {
     display: flex;
     margin: 0px 30px;
@@ -42,6 +110,8 @@ p {
     width: 150%
 }
 
+
+/* responsiveness*/
 @media only screen and (max-width: 789px) {
     .image-footer, .footer-layout {
         display: flex;
@@ -66,4 +136,9 @@ p {
         margin-top: 5px;
     }
 
+    /* poging tot */
+    .mugshot-image-container{
+        flex-direction: column;
+        align-items: center;
+    }
 } 
