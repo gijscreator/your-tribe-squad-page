@@ -1,4 +1,4 @@
-const SearchInput = document.querySelector('.search input[type="search"]');
+const SearchInput = document.querySelector('article input[type="search"]');
 SearchInput.addEventListener('input', function() {
     const filter = SearchInput.value.toLowerCase();
     const mugshots = document.querySelectorAll('.mugshot');
