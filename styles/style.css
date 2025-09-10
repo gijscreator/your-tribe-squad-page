@@ -292,17 +292,19 @@ nav img {
     text-align: center; 
 }
 
-.search {
+article {
     margin-top: 20px;
 }
 
-.search input[type="search"] {
+
+section input[type="search"] {
     border:solid 3px #000000;
     box-sizing:border-box;
     font-size:1.5em;
     height:34px;    
     outline:solid #fc0 0;
     width:15vw;
+    margin-top: 20px;
 }
 
 button[type="submit"] {
