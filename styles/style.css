@@ -5,9 +5,16 @@ p {
     font-weight: 600;
     margin: 0;
 }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+html {
+    overflow: hidden;
+}
 h2{
     font-size:1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3{
