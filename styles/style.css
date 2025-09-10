@@ -1,5 +1,9 @@
 /*overall styling*/
-p {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+  p {
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -67,7 +71,7 @@ header img{
 }
 
 .wave3 {
-    margin-bottom: -20%;
+    margin-bottom: -12%;
 }
 
 /*Mugshot styling Roxy*/
@@ -233,7 +237,6 @@ article button:hover {
 }
 footer {
     background-color: #F5F1EA;
-    margin: -100px -10px;
 }
 .wrapper-location,.location-image {
     display: flex;
@@ -318,6 +321,11 @@ button[type="submit"] {
 }
 
 /* responsiveness*/
+@media only screen and (min-width: 1080px) {
+    .wave3 {
+        margin-bottom: -5%;
+    }
+}
 
 @media only screen and (max-width: 789px) {
     .image-footer, .footer-layout {
@@ -342,6 +350,10 @@ button[type="submit"] {
     .roxy {
         margin-top: 5px;
     }
-
-    
+        .wave3 {
+        margin-bottom: -17%;
+    }
 } 
+
+
+
