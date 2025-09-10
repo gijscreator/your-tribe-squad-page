@@ -168,7 +168,7 @@ article button:hover {
     position: absolute;
     top: 24%;
     left: 32%;
-    width: 45%;
+    width: 35%;
     height: 20px;
     opacity: 0;  
     transition: 0.5s ease; 
