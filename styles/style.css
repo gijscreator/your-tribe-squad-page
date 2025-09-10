@@ -310,9 +310,34 @@ nav img {
 
 .grid-image {
     display: grid;
-
+    position: relative;
 }
 
+.overlay-text {
+    display: grid;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: ease-in 0.3s;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.overlay-text:hover {
+    opacity: 1;
+    transition: ease-in 0.3s;
+}
+
+.tekst {
+    font-size: 1rem;
+    display: grid;
+    color: white;
+    justify-self: center;
+    align-self: center
+}
 section input[type="search"] {
     border: solid 3px #000000;
     box-sizing: border-box;
