@@ -237,6 +237,7 @@ article button:hover {
 }
 footer {
     background-color: #F5F1EA;
+    padding: 50px;
 }
 .wrapper-location,.location-image {
     display: flex;
