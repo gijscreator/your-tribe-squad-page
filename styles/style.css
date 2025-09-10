@@ -12,7 +12,7 @@ h1 {
 html {
     overflow-x: hidden;
 }
-h2{
+h2 {
     font-size:1.8rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -194,17 +194,6 @@ article button:hover {
     top: 24%;
 }
 
-.load-more{
-    background-color: #F5F1EA;
-    border: solid black 3px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.load-more:hover{
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
-}
-
 /*footer styling*/
 .madeby {
     display: flex;
@@ -247,6 +236,15 @@ article button:hover {
     width: auto;
 }
 
+.hotspots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 20px;
+}
 .location-image {
     position: relative;
     width: 20%;
