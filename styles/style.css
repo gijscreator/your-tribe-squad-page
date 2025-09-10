@@ -101,12 +101,16 @@ header img{
     position: absolute;
     left: 10px;
     top: 10px;
+    color: white;
+    z-index: 1000;
 }
 
 .mugshot p{
    position: absolute;
    left: 10px; /*???????????*/
    top: 35px; /*????????????*/
+   color: white;
+   z-index: 1000;
 }
 
 .mugshot figcaption{
@@ -130,7 +134,7 @@ article h1 {
         circle at center, 
         rgba(0,0,0,0) 50%,          
         rgba(0,0,0,1) 100%);
-     pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+    pointer-events: none; /* snap niet wat dit is maar het werkte wel */
 }
 
 .mugshot-first:hover{
@@ -164,8 +168,8 @@ article button:hover {
     position: absolute;
     top: 24%;
     left: 32%;
-    width: 35%;
-    height: 20px;/*????????????*/
+    width: 45%;
+    height: 20px;
     opacity: 0;  
     transition: 0.5s ease; 
 }
