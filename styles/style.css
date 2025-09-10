@@ -5,9 +5,16 @@ p {
     font-weight: 600;
     margin: 0;
 }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-h2{
+html {
+    overflow-x: hidden;
+}
+h2 {
     font-size:1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3{
@@ -98,12 +105,16 @@ header img{
     position: absolute;
     left: 10px;
     top: 10px;
+    color: white;
+    z-index: 1000;
 }
 
 .mugshot p{
    position: absolute;
    left: 10px; /*???????????*/
    top: 35px; /*????????????*/
+   color: white;
+   z-index: 1000;
 }
 
 .mugshot figcaption{
@@ -127,7 +138,7 @@ article h1 {
         circle at center, 
         rgba(0,0,0,0) 50%,          
         rgba(0,0,0,1) 100%);
-     pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+    pointer-events: none; /* snap niet wat dit is maar het werkte wel */
 }
 
 .mugshot-first:hover{
@@ -162,7 +173,7 @@ article button:hover {
     top: 24%;
     left: 32%;
     width: 35%;
-    height: 20px;/*????????????*/
+    height: 20px;
     opacity: 0;  
     transition: 0.5s ease; 
 }
@@ -178,17 +189,6 @@ article button:hover {
 
 .glasses{
     top: 24%;
-}
-
-.load-more{
-    background-color: #F5F1EA;
-    border: solid black 3px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.load-more:hover{
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
 }
 
 /*footer styling*/
@@ -233,6 +233,15 @@ article button:hover {
     width: auto;
 }
 
+.hotspots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 20px;
+}
 .location-image {
     position: relative;
     width: 20%;
@@ -322,4 +331,6 @@ button[type="submit"] {
     .roxy {
         margin-top: 5px;
     }
+
+    
 } 
