@@ -203,6 +203,10 @@ article button:hover {
     top: 24%;
 }
 
+#docenten{
+    visibility: visible;
+}
+
 /*footer styling*/
 .madeby {
     display: flex;
