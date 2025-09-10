@@ -66,6 +66,10 @@ header img{
     margin-bottom: -12%;
 }
 
+.wave3 {
+    margin-bottom: -20%;
+}
+
 /*Mugshot styling Roxy*/
 .mugshot-article-container{
     text-align: center;
@@ -206,7 +210,7 @@ article button:hover {
     
 .footer-layout {
     display: flex;
-    margin: 0px 30px;
+    margin: none;
 }
 
 .logo {
@@ -223,7 +227,10 @@ article button:hover {
 .logo-madeby {
     width: 150%
 }
-
+footer {
+    background-color: #F5F1EA;
+    margin: -100px -10px;
+}
 .wrapper-location,.location-image {
     display: flex;
     flex-direction: row;
