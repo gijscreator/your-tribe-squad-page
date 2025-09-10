@@ -1,14 +1,17 @@
 /*overall styling*/
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
-  p {
+
+p {
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     margin: 0;
 }
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,23 +19,25 @@ h1 {
 html {
     overflow-x: hidden;
 }
+
 h2 {
-    font-size:1.8rem;
+    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 /*header styling*/
-header{
-    border-bottom: solid black 0.3rem;
-    margin-bottom: 5rem;
+header {
+    background-color: #F5F1EA;
 }
-li, a{
+
+li,
+a {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -41,56 +46,56 @@ li, a{
     list-style: none;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
 }
-header li{
+
+header li {
     display: inline-block;
     padding: 1.5rem;
     border-radius: 10px;
 }
 
-header li:hover{
+header li:hover {
     background-color: #F5F1EA;
 }
 
-header img{
+header img {
     height: 5rem;
     border-radius: 10px;
-}
-
-
-
-/*Wave styling*/
-.wave1, .wave2 {
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: -12%;
 }
 
 .wave3 {
     margin-bottom: -13%;
 }
 
+/*Wave styling*/
+.wave1,
+.wave2 {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -12%;
+}
+
 /*Mugshot styling Roxy*/
-.mugshot-article-container h2{
+.mugshot-article-container h2 {
     visibility: hidden;
 }
 
-.mugshot-article-container{
+.mugshot-article-container {
     text-align: center;
 }
 
-.mugshot-image-container{
+.mugshot-image-container {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     width: 80%;
 }
 
-.mugshot{
+.mugshot {
     width: 18%;
     aspect-ratio: 1 / 1;
     position: relative;
@@ -99,21 +104,21 @@ header img{
     margin: 0.8rem auto;
 }
 
-.mugshot img{
+.mugshot img {
     position: absolute;
     display: block;
     transition: 0.5s ease-in-out;
 }
 
-.mugshot-first{
+.mugshot-first {
     opacity: 1;
 }
 
-.mugshot-after{
+.mugshot-after {
     opacity: 0;
 }
 
-.mugshot h3{
+.mugshot h3 {
     position: absolute;
     left: 10px;
     top: 10px;
@@ -121,20 +126,22 @@ header img{
     z-index: 1000;
 }
 
-.mugshot p{
-   position: absolute;
-   left: 10px; /*???????????*/
-   top: 35px; /*????????????*/
-   color: white;
-   z-index: 1000;
+.mugshot p {
+    position: absolute;
+    left: 10px;
+    /*???????????*/
+    top: 35px;
+    /*????????????*/
+    color: white;
+    z-index: 1000;
 }
 
-.mugshot figcaption{
+.mugshot figcaption {
     visibility: hidden;
     transition: 0.5s ease-in-out;
 }
 
-.mugshot:hover figcaption{
+.mugshot:hover figcaption {
     visibility: visible;
 }
 
@@ -145,19 +152,20 @@ article h1 {
 .mugshot:hover::after {
     content: "";
     position: absolute;
-    inset: 0; /* vult hele container / absoluut gepositioneerd https://developer.mozilla.org/en-US/docs/Web/CSS/inset*/
-    background: radial-gradient(
-        circle at center, 
-        rgba(0,0,0,0) 50%,          
-        rgba(0,0,0,1) 100%);
-    pointer-events: none; /* snap niet wat dit is maar het werkte wel */
+    inset: 0;
+    /* vult hele container / absoluut gepositioneerd https://developer.mozilla.org/en-US/docs/Web/CSS/inset*/
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 1) 100%);
+    pointer-events: none;
+    /* snap niet wat dit is maar het werkte wel */
 }
 
-.mugshot-first:hover{
+.mugshot-first:hover {
     opacity: 0;
 }
 
-.mugshot-after:hover{
+.mugshot-after:hover {
     opacity: 1;
 }
 
@@ -178,7 +186,7 @@ article button:hover {
     transition: 0.25s;
 }
 
-.eye-bar{
+.eye-bar {
     content: '';
     background-color: #000000;
     position: absolute;
@@ -186,24 +194,24 @@ article button:hover {
     left: 32%;
     width: 35%;
     height: 20px;
-    opacity: 0;  
-    transition: 0.5s ease; 
+    opacity: 0;
+    transition: 0.5s ease;
 }
 
-.mugshot:hover .eye-bar{
+.mugshot:hover .eye-bar {
     opacity: 1;
 }
 
-.angle{
+.angle {
     top: 25%;
     rotate: 15deg;
 }
 
-.glasses{
+.glasses {
     top: 24%;
 }
 
-#docenten{
+#docenten {
     visibility: visible;
 }
 
@@ -219,7 +227,7 @@ article button:hover {
     flex-direction: column;
     margin-top: 15px;
 }
-    
+
 .footer-layout {
     display: flex;
     margin: none;
@@ -239,11 +247,14 @@ article button:hover {
 .logo-madeby {
     width: 150%
 }
+
 footer {
     background-color: #F5F1EA;
     padding: 50px;
 }
-.wrapper-location,.location-image {
+
+.wrapper-location,
+.location-image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -261,6 +272,7 @@ footer {
     width: auto;
     margin-bottom: 20px;
 }
+
 .location-image {
     position: relative;
     width: 20%;
@@ -294,7 +306,7 @@ nav img {
 }
 
 .welcome-page {
-    text-align: center; 
+    text-align: center;
 }
 
 article {
@@ -303,12 +315,12 @@ article {
 
 
 section input[type="search"] {
-    border:solid 3px #000000;
-    box-sizing:border-box;
-    font-size:1.5em;
-    height:34px;    
-    outline:solid #fc0 0;
-    width:15vw;
+    border: solid 3px #000000;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    height: 34px;
+    outline: solid #fc0 0;
+    width: 15vw;
     margin-top: 20px;
 }
 
@@ -326,22 +338,32 @@ button[type="submit"] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
 /* responsiveness*/
-@media only screen and (min-width: 1080px) {
-    .wave3 {
-        margin-bottom: -13%;
-    }
+@media only screen and (max-width: 1500px) {
+
 }
 
 @media only screen and (max-width: 789px) {
-    .image-footer, .footer-layout {
+
+    .image-footer,
+    .footer-layout {
         display: flex;
         flex-direction: column;
         flex: 1;
         justify-content: center;
         align-items: center;
         margin-top: 20px
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-self: start;
+        margin: 0px;
+        padding: 0px;
+    }
+    header li {
+        padding: 0px;
     }
 
     .logo {
@@ -352,26 +374,31 @@ button[type="submit"] {
         width: 40%;
         height: auto;
     }
+
     .madeby {
         font-size: 1rem;
         justify-self: end;
         align-self: center;
 
     }
+
+     header nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .wave3 {
+        margin-bottom: -20%;
+    }
     .roxy {
         margin-top: 5px;
     }
-        .wave3 {
-        margin-bottom: -17%;
-    }
+
     .logo-madeby {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-self: end;
         gap: 20px;
-        
+
     }
-} 
-
-
-
+}
