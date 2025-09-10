@@ -67,9 +67,10 @@ header img{
 }
 
 /*Mugshot styling Roxy*/
-.mugshot-image-container h2{
+.mugshot-article-container h2{
     visibility: hidden;
 }
+
 .mugshot-article-container{
     text-align: center;
 }
