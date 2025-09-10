@@ -87,13 +87,11 @@ header img{
     margin: 0.8rem auto;
 }
 
-
 .mugshot img{
     position: absolute;
     display: block;
     transition: 0.5s ease-in-out;
 }
-
 
 .mugshot-first{
     opacity: 1;
@@ -102,7 +100,6 @@ header img{
 .mugshot-after{
     opacity: 0;
 }
-
 
 .mugshot h3{
     position: absolute;
@@ -281,7 +278,7 @@ nav img {
     text-align: center; 
 }
 
-.search{
+.search {
     margin-top: 20px;
 }
 
