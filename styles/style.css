@@ -128,9 +128,7 @@ header img {
 .mugshot p {
     position: absolute;
     left: 10px;
-    /*???????????*/
     top: 35px;
-    /*????????????*/
     color: white;
     z-index: 1000;
 }
@@ -192,7 +190,7 @@ article button:hover {
     top: 24%;
     left: 32%;
     width: 35%;
-    height: 20px;
+    height: 8%;
     opacity: 0;
     transition: 0.5s ease;
 }
