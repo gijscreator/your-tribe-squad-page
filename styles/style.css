@@ -130,7 +130,23 @@ header img {
     left: 10px;
     top: 35px;
     color: white;
-    z-index: 1000;
+    z-index: 1;
+}
+
+.mugshot a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    z-index: 1;
+}
+
+.docenten .link-icon {
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    color: white;
+    z-index: 1;
 }
 
 .mugshot figcaption {
@@ -210,7 +226,10 @@ article button:hover {
 
 #docenten {
     visibility: visible;
-    width: 50%;
+}
+
+.container-docenten .mugshot{
+    width: 25%;
 }
 
 /*footer styling*/
@@ -433,10 +452,16 @@ button[type="submit"] {
 
     }
 
-    /*Roxy: 2 mugshots naast elkaar
-    docenten 2 naast elkaar */
+    .container-docenten .mugshot{
+        width: 45%;
+    }
+    /*Roxy: 2 mugshots naast elkaar */
 }
 @media only screen and (min-width:790) and (max-width:1080){
+    /*waarom werkt dit niet ???*/
+   .mugshot-image-container .mugshot{
+    width: 50%;
+   }
     /*roxy: 4 mugshots naast elkaar */
 }
 
