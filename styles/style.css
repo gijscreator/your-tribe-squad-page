@@ -237,8 +237,9 @@ article button:hover {
 }
 
 .container-docenten .mugshot{
-    width: 30%;
+    width: 28%;
 }
+
 
 /*footer styling*/
 .madeby {
@@ -469,4 +470,9 @@ button[type="submit"] {
 }
 
 
-
+@media only screen and (min-width: 1500px) {
+  .mugshot-image-container {
+    max-width: 1500px; 
+    margin: 0 auto;
+  }
+}
