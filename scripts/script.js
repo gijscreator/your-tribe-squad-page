@@ -4,7 +4,7 @@ SearchInput.addEventListener('input', function() {
     const mugshots = document.querySelectorAll('.mugshot');
 
     mugshots.forEach(mugshot => {
-        const name = mugshot.querySelector('h3').textContent.toLowerCase()
+        const name = mugshot.querySelector('p').textContent.toLowerCase()
 
         if(name.includes(filter)) {
             mugshot.style.display = '';
