@@ -88,6 +88,10 @@ header img {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 .mugshot-image-container {
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +199,6 @@ article h1 {
     content: "";
     position: absolute;
     inset: 0;
-    /* vult hele container / absoluut gepositioneerd https://developer.mozilla.org/en-US/docs/Web/CSS/inset*/
     background: radial-gradient(circle at center,
             rgba(0, 0, 0, 0) 50%,
             rgba(0, 0, 0, 1) 100%);
@@ -287,7 +290,6 @@ article button:hover {
 .container-docenten .mugshot {
     width: 28%;
 }
-
 
 /*footer styling*/
 .madeby {
@@ -415,7 +417,8 @@ nav img {
 
 section input[type="search"] {
     padding: 10px;
-    border: solid 3px #000000;
+    border: solid 1px #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
     font-size: 1rem;
     height: 34px;
@@ -445,6 +448,10 @@ section input[type="search"] {
         margin-top: 20px
     }
 
+    section input[type="search"]{
+        width: 80vw;
+    }
+    
     .wrapper-location,
     .location-image {
         display: grid;

@@ -13,3 +13,17 @@ SearchInput.addEventListener('input', function() {
         }
     })
 });
+
+const studenten = document.querySelectorAll('.mugshot.student');
+const meerFotosKnop = document.querySelector('.meer-fotos');
+
+studenten.forEach((student, index) => {
+  if (index >= 4) {
+    student.classList.add('hidden');
+  }
+});
+
+meerFotosKnop.addEventListener('click', () => {
+  studenten.forEach(student => student.classList.remove('hidden'));
+  meerFotosKnop.style.display = 'none';
+});
