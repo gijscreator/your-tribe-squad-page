@@ -362,12 +362,6 @@ button[type="submit"] {
 }
 
 /* responsiveness*/
-@media only screen and (max-width: 1500px) {
-}
-
-@media only screen and (min-width:790){
-}
-
 @media only screen and (max-width: 789px) {
 
     .image-footer,
@@ -438,4 +432,19 @@ button[type="submit"] {
         gap: 20px;
 
     }
+
+    /*Roxy: 2 mugshots naast elkaar
+    docenten 2 naast elkaar */
 }
+@media only screen and (min-width:790) and (max-width:1080){
+    /*roxy: 4 mugshots naast elkaar */
+}
+
+@media only screen and (max-width: 1080px) and (max-width:1500) {
+    /*roxy: 5 mugshots naast elkaar*/
+}
+
+@media only screen and (min-width: 1501px){
+    /*alleen meer witruimte*/
+}
+
