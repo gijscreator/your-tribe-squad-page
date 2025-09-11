@@ -91,7 +91,24 @@ header img {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 80%;
+    width: 90%;
+}
+
+.card-tekst1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: left;
+    font-size: 1rem;
+    padding: 10px;
+
+}
+
+.card-tekst2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 1rem;
+    justify-self: right;
+    padding: 10px;
 }
 
 .mugshot {
@@ -126,14 +143,11 @@ header img {
 }
 
 .mugshot p {
-    position: absolute;
-    left: 10px;
-    top: 35px;
     color: white;
     z-index: 1;
 }
 
-.mugshot a{
+.mugshot a {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -171,7 +185,6 @@ article h1 {
             rgba(0, 0, 0, 0) 50%,
             rgba(0, 0, 0, 1) 100%);
     pointer-events: none;
-    /* snap niet wat dit is maar het werkte wel */
 }
 
 .mugshot-first:hover {
@@ -200,7 +213,6 @@ article button:hover {
 }
 
 .eye-bar {
-    content: '';
     background-color: #000000;
     position: absolute;
     top: 24%;
@@ -215,6 +227,27 @@ article button:hover {
     opacity: 1;
 }
 
+.card-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #000000;
+    border: 1px solid white;
+    z-index: 10000;
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    width: 45%;
+    height: 30%;
+    opacity: 0;
+    z-index: 100;
+    transition: 0.5s ease;
+}
+
+.mugshot:hover .card-info {
+    opacity: 1;
+}
+
 .angle {
     top: 25%;
     rotate: 15deg;
@@ -224,11 +257,11 @@ article button:hover {
     top: 24%;
 }
 
-.koop{
+.koop {
     top: 20%;
 }
 
-.justus{
+.justus {
     top: 22%;
 }
 
@@ -236,7 +269,7 @@ article button:hover {
     visibility: visible;
 }
 
-.container-docenten .mugshot{
+.container-docenten .mugshot {
     width: 28%;
 }
 
@@ -364,6 +397,7 @@ nav img {
     justify-self: center;
     align-self: center
 }
+
 section input[type="search"] {
     border: solid 3px #000000;
     box-sizing: border-box;
@@ -389,8 +423,15 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1500px) {
+    .mugshot-image-container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
 /* responsiveness*/
-@media only screen and (max-width: 789px) {
+@media only screen and (min-width: 301px) and (max-width: 786px) {
 
     .image-footer,
     .footer-layout {
@@ -461,18 +502,18 @@ button[type="submit"] {
 
     }
 
-    .container-docenten .mugshot{
+    .container-docenten .mugshot {
         width: 45%;
     }
+
     .mugshot {
-        width: 35%; /*hier werkt het wel */
+        width: 45%;
+        /*hier werkt het wel */
     }
 }
 
-
-@media only screen and (min-width: 1500px) {
-  .mugshot-image-container {
-    max-width: 1500px; 
-    margin: 0 auto;
-  }
+@media only screen and (max-width: 300px) {
+    .mugshot {
+        width: 100%;
+    }
 }
