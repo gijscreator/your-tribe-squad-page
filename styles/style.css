@@ -95,7 +95,7 @@ header img {
 }
 
 .mugshot {
-    width: 18%;
+    width: 22%;
     aspect-ratio: 1 / 1;
     position: relative;
     overflow: hidden;
@@ -455,21 +455,10 @@ button[type="submit"] {
     .container-docenten .mugshot{
         width: 45%;
     }
-    /*Roxy: 2 mugshots naast elkaar */
-}
-@media only screen and (min-width:790) and (max-width:1080){
-    /*waarom werkt dit niet ???*/
-   .mugshot-image-container .mugshot{
-    width: 50%;
-   }
-    /*roxy: 4 mugshots naast elkaar */
+    .mugshot {
+        width: 35%; /*hier werkt het wel */
+    }
 }
 
-@media only screen and (max-width: 1080px) and (max-width:1500) {
-    /*roxy: 5 mugshots naast elkaar*/
-}
 
-@media only screen and (min-width: 1501px){
-    /*alleen meer witruimte*/
-}
 
