@@ -363,7 +363,7 @@ nav img {
     height: auto;
 }
 
-.welcome-page {
+.welcome-page, .zoektekst {
     text-align: center;
 }
 
@@ -512,7 +512,7 @@ button[type="submit"] {
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
     .mugshot {
         width: 100%;
     }
