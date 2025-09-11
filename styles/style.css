@@ -55,11 +55,10 @@ header nav {
 header li {
     display: inline-block;
     padding: 1.5rem;
-    border-radius: 10px;
 }
 
 header li:hover {
-    background-color: #F5F1EA;
+    border-bottom: solid black 1px;
 }
 
 header img {
@@ -213,6 +212,7 @@ article button:hover {
 
 #docenten {
     visibility: visible;
+    width: 50%;
 }
 
 /*footer styling*/
@@ -364,7 +364,11 @@ button[type="submit"] {
 }
 
 /* responsiveness*/
-@media only screen and (max-width: 1500px) {}
+@media only screen and (max-width: 1500px) {
+}
+
+@media only screen and (min-width:790){
+}
 
 @media only screen and (max-width: 789px) {
 
