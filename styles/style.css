@@ -569,7 +569,7 @@ section input[type="search"] {
     }
 }
 
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 420px) {
     .mugshot {
         width: 100%;
     }
