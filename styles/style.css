@@ -136,10 +136,10 @@ header img {
     justify-self: center;
     align-self: center;
     font-size: .8rem;
-    padding: 5px 10px;
+    padding: 5px 30px;
     color: rgb(141, 232, 255);
-    border-bottom: 3px solid white;
-    border-top: 3px solid white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 }
 
 .card-tekst4 {
@@ -149,7 +149,7 @@ header img {
     justify-self: center;
     align-self: center;
     font-size: .6rem;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .mugshot {
@@ -182,9 +182,6 @@ header img {
     color: white;
     z-index: 1000;
 }
-
-
-
 
 .docenten .link-icon {
     position: absolute;
