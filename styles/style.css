@@ -144,6 +144,39 @@ header img {
     padding: 0px 20px;
 }
 
+.welcome-section {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px 20px;
+  background-color: #F5F1EA; /* fallback kleur */
+}
+
+.background-collage {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: grid;
+  gap: 5px;
+  filter: blur(12px) brightness(1);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.background-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-section h1,
+.welcome-section p {
+  position: relative;
+  z-index: 2;
+  color: #ffffff; /* wit voor contrast */
+}
+
+
 .mugshot {
     width: 22%;
     aspect-ratio: 1 / 1;
@@ -389,7 +422,9 @@ main h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    color: #2c2c2c;
+    position: relative;
 }
 
 #paragraaf {
