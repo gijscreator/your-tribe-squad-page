@@ -83,14 +83,6 @@ header img {
     margin-bottom: -12%;
 }
 
-.wave1 {
-  margin-top: -90px;
-}
-
-.wave2 {
-  margin-top: -80px;
-}
-
 /*Mugshot styling Roxy*/
 .mugshot-article-container h2 {
     visibility: hidden;
@@ -459,7 +451,7 @@ section input[type="search"] {
   font-weight: 600;
   font-family: 'Poppins', Arial, sans-serif;
   color: #fff;
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -469,7 +461,7 @@ section input[type="search"] {
 
 .meer-fotos:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(135deg, #ffb984, #fa8a6e);
+  background: linear-gradient(135deg, #94e4c6, #d3ecae);
 }
 
 @media only screen and (min-width: 1500px) {
