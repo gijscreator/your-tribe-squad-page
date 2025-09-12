@@ -4,7 +4,7 @@ SearchInput.addEventListener('input', function() {
     const mugshots = document.querySelectorAll('.mugshot');
 
     mugshots.forEach(mugshot => {
-        const name = mugshot.querySelector('h3').textContent.toLowerCase()
+        const name = mugshot.querySelector('p').textContent.toLowerCase()
 
         if(name.includes(filter)) {
             mugshot.style.display = '';
@@ -12,4 +12,18 @@ SearchInput.addEventListener('input', function() {
             mugshot.style.display = 'none'
         }
     })
+});
+
+const studenten = document.querySelectorAll('.mugshot.student');
+const meerFotosKnop = document.querySelector('.meer-fotos');
+
+studenten.forEach((student, index) => {
+  if (index >= 4) {
+    student.classList.add('hidden');
+  }
+});
+
+meerFotosKnop.addEventListener('click', () => {
+  studenten.forEach(student => student.classList.remove('hidden'));
+  meerFotosKnop.style.display = 'none';
 });
