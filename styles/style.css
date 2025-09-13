@@ -150,12 +150,19 @@ header img {
 
 .welcome-section {
   position: relative;
-  text-align: center;
+  background-size: cover;
   overflow: hidden;
-  padding: 40px 20px;
-  background-color: #F5F1EA;
-  width: 80%;
-  margin-left: 155px;
+}
+
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/mugshots/mugshotcollectie.png") no-repeat center center;
+  background-size: cover;
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: 0;
 }
 
 .background-collage {
@@ -173,16 +180,26 @@ header img {
 
 .background-collage img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
+  height: auto;
+  filter: blur(8px);
 }
 
-.welcome-section h1,
+.welcome-section h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  margin: 0;
+  padding-top: 100px;
+}
+
 .welcome-section p {
   position: relative;
   z-index: 2;
-  color: #ffffff;
+  color: #3f3f3f;
 }
 
 .mugshot {
