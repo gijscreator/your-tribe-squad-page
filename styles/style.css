@@ -159,8 +159,9 @@ header img {
   position: absolute;
   inset: 0;
   background: url("../assets/mugshots/mugshotcollectie.png") no-repeat center center;
+  background-position: top center;
   background-size: cover;
-  filter: blur(5px);
+  filter: blur(8px);
   transform: scale(1.1);
   z-index: 0;
 }
@@ -181,7 +182,7 @@ header img {
 .background-collage img {
   width: 100%;
   height: auto;
-  filter: blur(8px);
+  filter: blur(10px);
 }
 
 .welcome-section h1 {
@@ -511,7 +512,7 @@ section input[type="search"] {
   font-weight: 600;
   font-family: 'Poppins', Arial, sans-serif;
   color: #fff;
-  background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
+  background: linear-gradient(135deg, #cadad4, #e3e9d7);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -521,7 +522,7 @@ section input[type="search"] {
 
 .meer-fotos:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(135deg, #94e4c6, #d3ecae);
+  background: linear-gradient(135deg, #9ee0c8, #dce9c8);
 }
 
 @media only screen and (min-width: 1500px) {
