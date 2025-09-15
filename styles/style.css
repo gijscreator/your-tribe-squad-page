@@ -491,7 +491,7 @@ section input[type="search"] {
     }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 786px) {
+@media only screen and (min-width: 300px) and (max-width: 786px) {
 
     .image-footer,
     .footer-layout {
@@ -592,6 +592,9 @@ section input[type="search"] {
     justify-self: left;
     font-size: 1rem;
     padding: 10px;
+    border-right: 2px solid white;
+    padding-right:50%;
+    height: 65%;
 
 }
 
@@ -631,7 +634,7 @@ section input[type="search"] {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 4300px) {
     .mugshot {
         width: 100%;
     }
