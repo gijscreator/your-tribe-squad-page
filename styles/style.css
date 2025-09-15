@@ -483,10 +483,9 @@ section input[type="search"] {
   margin: 2rem auto;
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
-  font-weight: 600;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 300;
   color: #fff;
-  background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
+  background: #22333b;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -495,7 +494,6 @@ section input[type="search"] {
 }
 
 .meer-fotos:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   background: linear-gradient(135deg, #94e4c6, #d3ecae);
 }
 
