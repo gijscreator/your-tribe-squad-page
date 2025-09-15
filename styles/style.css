@@ -477,6 +477,11 @@ section input[type="search"] {
   background: linear-gradient(135deg, #94e4c6, #d3ecae);
 }
 
+.mugshot p {
+    color: white;
+    z-index: 1;
+}
+
 /* responsiveness*/
 @media only screen and (min-width: 1500px) {
     .mugshot-image-container {
@@ -640,7 +645,3 @@ section input[type="search"] {
     }
 }
 
-.mugshot p {
-    color: white;
-    z-index: 1;
-}
