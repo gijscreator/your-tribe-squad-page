@@ -476,6 +476,7 @@ section input[type="search"] {
   background: linear-gradient(135deg, #9ee0c8, #dce9c8);
 }
 
+/* responsiveness*/
 @media only screen and (min-width: 1500px) {
     .mugshot-image-container {
         max-width: 1500px;
@@ -483,8 +484,7 @@ section input[type="search"] {
     }
 }
 
-/* responsiveness*/
-@media only screen and (min-width: 301px) and (max-width: 786px) {
+@media only screen and (min-width: 421px) and (max-width: 786px) {
 
     .image-footer,
     .footer-layout {
