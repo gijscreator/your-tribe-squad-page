@@ -2,43 +2,61 @@ const SearchInput = document.querySelector('article input[type="search"]');
 const studenten = document.querySelectorAll('.mugshot.student');
 const meerFotosKnop = document.querySelector('.meer-fotos');
 
-studenten.forEach((student, index) => {
-  if (index >= 4) {
-    student.style.display = 'none';
+function getMaxVisible() {
+  if (window.innerWidth <= 600) { 
+    return 3;
+  } else {
+    return 4;
+  }
+}
+
+function toonStandaard() {
+  const maxVisible = getMaxVisible();
+
+  studenten.forEach((student, index) => {
+    if (index < maxVisible) {
+      student.style.display = '';
+    } else {
+      student.style.display = 'none';
+    }
+  });
+}
+
+toonStandaard();
+
+window.addEventListener('resize', toonStandaard);
+
+SearchInput.addEventListener('input', function() {
+  const filter = SearchInput.value.toLowerCase();
+
+  studenten.forEach(student => {
+    const nameEl = student.querySelector('figcaption p') || student.querySelector('p');
+    const name = nameEl ? nameEl.textContent.toLowerCase() : '';
+
+    if (name.includes(filter)) {
+      student.style.display = '';
+    } else {
+      student.style.display = 'none';
+    }
+  });
+
+  if (filter.length > 0) {
+    meerFotosKnop.style.display = 'none';
+  } else {
+    meerFotosKnop.style.display = '';
+    toonStandaard();
   }
 });
 
-SearchInput.addEventListener('input', function() {
-    const filter = SearchInput.value.toLowerCase();
-
-    studenten.forEach(student => {
-        const nameEl = student.querySelector('figcaption p') || student.querySelector('p');
-        const name = nameEl ? nameEl.textContent.toLowerCase() : '';
-        
-        if (name.includes(filter)) {
-            student.style.display = '';
-        } else {
-            student.style.display = 'none';
-        }
-    });
-
-    if (filter.length > 0) {
-        meerFotosKnop.style.display = 'none';
-    } else {
-        meerFotosKnop.style.display = '';
-        studenten.forEach((student, index) => {
-            if (index >= 4) {
-                student.style.display = 'none';
-            } else {
-                student.style.display = '';
-            }
-        });
-    }
-});
-
+let allesZichtbaar = false;
 meerFotosKnop.addEventListener('click', () => {
-    studenten.forEach(student => {
-        student.style.display = '';
-    });
-    meerFotosKnop.style.display = 'none';
+    if (!allesZichtbaar) {
+        studenten.forEach(student => student.style.display = '');
+        meerFotosKnop.textContent = "Minder foto's";
+        allesZichtbaar = true;
+    } else {
+        toonStandaard();
+        meerFotosKnop.textContent = "Meer foto's";
+        allesZichtbaar = false;
+    }
 });
