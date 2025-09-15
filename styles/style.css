@@ -71,6 +71,10 @@ header img {
     margin-bottom: -13%;
 }
 
+.wave4 {
+    margin-bottom: -200px;
+}
+
 /*Wave styling*/
 .wave1,
 .wave2 {
@@ -144,38 +148,11 @@ header img {
     padding: 0px 20px;
 }
 
-.welcome-section {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  padding: 20px 20px;
-  background-color: #F5F1EA; /* fallback kleur */
-}
-
-.background-collage {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  display: grid;
-  gap: 5px;
-  filter: blur(12px) brightness(1);
-  z-index: 1;
-  overflow: hidden;
-}
-
 .background-collage img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  filter: blur(10px);
 }
-
-.welcome-section h1,
-.welcome-section p {
-  position: relative;
-  z-index: 2;
-  color: #ffffff; /* wit voor contrast */
-}
-
 
 .mugshot {
     width: 22%;
@@ -485,7 +462,7 @@ section input[type="search"] {
   font-size: 1.1rem;
   font-weight: 300;
   color: #fff;
-  background: #22333b;
+  background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -494,9 +471,11 @@ section input[type="search"] {
 }
 
 .meer-fotos:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   background: linear-gradient(135deg, #94e4c6, #d3ecae);
 }
 
+/* responsiveness*/
 @media only screen and (min-width: 1500px) {
     .mugshot-image-container {
         max-width: 1500px;
@@ -504,8 +483,7 @@ section input[type="search"] {
     }
 }
 
-/* responsiveness*/
-@media only screen and (min-width: 301px) and (max-width: 786px) {
+@media only screen and (min-width: 421px) and (max-width: 786px) {
 
     .image-footer,
     .footer-layout {
@@ -567,15 +545,22 @@ section input[type="search"] {
     .mugshot-after {
         opacity: 1;
     }
+
     .card-info {
         opacity: 1;
     }
+
     .eye-bar {
         opacity: 1;
     }
+
     .wave3 {
         margin-bottom: -20%;
     }
+
+    .wave4 {
+        margin-bottom: -20%;
+    }   
 
     .roxy {
         margin-top: 5px;
