@@ -113,6 +113,9 @@ header img {
     justify-self: left;
     font-size: 1rem;
     padding: 10px;
+    border-right: 2px solid white;
+    padding-right:50%;
+    height: 65%;
 
 }
 
@@ -482,6 +485,12 @@ section input[type="search"] {
     }
 }
 
+@media only screen and (min-width: 790px) and (max-width: 1400px) {
+.mugshot {
+    width: 30%;
+    }
+}
+
 @media only screen and (min-width: 421px) and (max-width: 786px) {
 
     .image-footer,
@@ -574,8 +583,9 @@ section input[type="search"] {
     }
 
     .container-docenten .mugshot {
-        width: 45%;
+        width: 100%;
     }
+    
     .card-tekst1 {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -616,9 +626,8 @@ section input[type="search"] {
     font-size: .7rem;
     padding: 0px 10px;
 }
-    .mugshot {
-        width: 45%;
-        /*hier werkt het wel */
+.mugshot {
+    width: 100%;
     }
 }
 
@@ -627,6 +636,7 @@ section input[type="search"] {
         width: 100%;
     }
 }
+
 .mugshot p {
     color: white;
     z-index: 1;
