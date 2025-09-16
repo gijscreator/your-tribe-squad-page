@@ -137,10 +137,6 @@ header img {
     text-align: center;
 }
 
-.hidden {
-    display: none;
-}
-
 .mugshot-image-container {
     display: flex;
     flex-wrap: wrap;
