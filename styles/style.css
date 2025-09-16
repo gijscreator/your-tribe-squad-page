@@ -1,4 +1,4 @@
-/*overall styling*/
+/*overall styling--------------------------------------------------------------------------------------------------------------------------------*/
 html,
 body {
     margin: 0;
@@ -39,7 +39,7 @@ h4 {
 }
 
 
-/*header styling*/
+/*header styling---------------------------------------------------------------------------------------------------------------------------------------*/
 header {
     background-color: #F5F1EA;
 }
@@ -83,7 +83,7 @@ header img {
     margin-bottom: -200px;
 }
 
-/*Wave styling*/
+/*Wave styling------------------------------------------------------------------------------------------------------------------------*/
 .wave1,
 .wave2 {
     display: block;
@@ -94,7 +94,7 @@ header img {
     margin-right: -10px;
     margin-bottom: -12%;
 }
-/*welkom stuk styling*/
+/*welkom stuk styling-----------------------------------------------------------------------------------------------------------------*/
 .welcome-page p {
     width: 500px;
     margin-left: 50px;
@@ -128,15 +128,17 @@ header img {
     justify-content: center;
 }
 
-/*Mugshot styling Roxy*/
-.mugshot-article-container h {
+/*Mugshot styling Roxy-----------------------------------------------------------------------------------------------------------------*/
+/*ik wil de h2 niet zien maar semantiek en toegankelijkheid*/
+.mugshot-article-container h2 {
     visibility: hidden;
 }
-
+/*text in het midden zetten*/
 .mugshot-article-container {
     text-align: center;
 }
 
+/*alles in deze container naast elkaar zetten en onder elkaar als geen ruimte meer in het midden van de pagina*/
 .mugshot-image-container {
     display: flex;
     flex-wrap: wrap;
@@ -332,7 +334,7 @@ article button:hover {
     width: 28%;
 }
 
-/*footer styling*/
+/*footer styling-------------------------------------------------------------------------------------------------------------------------------------*/
 .madeby {
     display: flex;
     flex-direction: column;
@@ -503,7 +505,7 @@ section input[type="search"] {
     z-index: 1;
 }
 
-/* responsiveness*/
+/* responsiveness-----------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1500px) {
     .mugshot-image-container {
         max-width: 1500px;
