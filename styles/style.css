@@ -198,7 +198,6 @@ header img {
     height: 35%;
     opacity: 0;
     z-index: 100;
-    transition: 0.5s ease;
 }
 
 .card-tekst1 {
@@ -477,22 +476,20 @@ section input[type="search"] {
 }
 
 .meer-fotos {
-    display: block;
-    margin: 2rem auto;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    color: #fff;
-    background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    background: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    transition-duration: 2s;
 }
 
 .meer-fotos:hover {
-    background: linear-gradient(135deg, #94e4c6, #d3ecae);
+    background: black;
+    color: white;
+    transition-duration: 2s;
 }
 
 .mugshot p {
