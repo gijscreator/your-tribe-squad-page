@@ -25,12 +25,14 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3, h5 {
+h3,
+h5 {
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-h4{
+
+h4 {
     visibility: hidden;
 }
 
@@ -112,13 +114,14 @@ header img {
 }
 
 .welcome-page p {
-  width: 500px;
-  margin-left: 50px;
+    width: 500px;
+    margin-left: 50px;
 }
 
 #welcome-page-img {
-  padding: 2rem;
+    padding: 2rem;
 }
+
 .welcome-page img {
     float: right;
     height: 500px;
@@ -137,7 +140,7 @@ header img {
     font-size: 1rem;
     padding: 10px;
     border-right: 2px solid white;
-    padding-right:50%;
+    padding-right: 50%;
     height: 65%;
 
 }
@@ -148,7 +151,7 @@ header img {
     font-size: 1rem;
     justify-self: right;
     padding: 10px;
-    
+
 }
 
 .card-tekst3 {
@@ -175,9 +178,9 @@ header img {
 }
 
 .background-collage img {
-  width: 100%;
-  height: auto;
-  filter: blur(10px);
+    width: 100%;
+    height: auto;
+    filter: blur(10px);
 }
 
 .mugshot {
@@ -418,7 +421,7 @@ nav img {
 }
 
 .zoektekst {
-    text-align: center; 
+    text-align: center;
 }
 
 main h1 {
@@ -431,10 +434,10 @@ main h1 {
 }
 
 #paragraaf {
-    margin-bottom: 300px;  
+    margin-bottom: 300px;
     text-align: center;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .grid-image {
@@ -482,22 +485,22 @@ section input[type="search"] {
 }
 
 .meer-fotos {
-  display: block;
-  margin: 2rem auto;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    background: linear-gradient(135deg, #A8E6CF, #DCEDC2);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .meer-fotos:hover {
-  background: linear-gradient(135deg, #94e4c6, #d3ecae);
+    background: linear-gradient(135deg, #94e4c6, #d3ecae);
 }
 
 .mugshot p {
@@ -514,8 +517,8 @@ section input[type="search"] {
 }
 
 @media only screen and (min-width: 790px) and (max-width: 1400px) {
-.mugshot {
-    width: 30%;
+    .mugshot {
+        width: 30%;
     }
 }
 
@@ -531,10 +534,10 @@ section input[type="search"] {
         margin-top: 20px
     }
 
-    section input[type="search"]{
+    section input[type="search"] {
         width: 80vw;
     }
-    
+
     .wrapper-location,
     .location-image {
         display: grid;
@@ -596,7 +599,7 @@ section input[type="search"] {
 
     .wave4 {
         margin-bottom: -20%;
-    }   
+    }
 
     .roxy {
         margin-top: 5px;
@@ -613,52 +616,53 @@ section input[type="search"] {
     .container-docenten .mugshot {
         width: 100%;
     }
-    
+
     .card-tekst1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    justify-self: left;
-    font-size: 1rem;
-    padding: 10px;
-    border-right: 2px solid white;
-    padding-right:50%;
-    height: 65%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: left;
+        font-size: 1rem;
+        padding: 10px;
+        border-right: 2px solid white;
+        padding-right: 50%;
+        height: 65%;
 
-}
+    }
 
-.card-tekst2 {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-size: 1rem;
-    justify-self: right;
-    padding: 10px;
-    
-}
+    .card-tekst2 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        font-size: 1rem;
+        justify-self: right;
+        padding: 10px;
 
-.card-tekst3 {
-    grid-column-start: 1;
-    grid-column: span 2;
-    grid-row-start: 2;
-    justify-self: center;
-    align-self: center;
-    font-size: .8rem;
-    color: blue;
-    padding: 5px 10px;
-    border-bottom: 3px solid white;
-    border-top: 3px solid white;
-}
+    }
 
-.card-tekst4 {
-    grid-column-start: 1;
-    grid-column: span 2;
-    grid-row-start: 3;
-    justify-self: center;
-    align-self: center;
-    font-size: .7rem;
-    padding: 0px 10px;
-}
-.mugshot {
-    width: 100%;
+    .card-tekst3 {
+        grid-column-start: 1;
+        grid-column: span 2;
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: center;
+        font-size: .8rem;
+        color: blue;
+        padding: 5px 10px;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+    }
+
+    .card-tekst4 {
+        grid-column-start: 1;
+        grid-column: span 2;
+        grid-row-start: 3;
+        justify-self: center;
+        align-self: center;
+        font-size: .7rem;
+        padding: 0px 10px;
+    }
+
+    .mugshot {
+        width: 100%;
     }
 }
 
