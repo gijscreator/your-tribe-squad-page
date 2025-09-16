@@ -34,6 +34,7 @@ h5 {
 
 h4 {
     visibility: hidden;
+    position: absolute;
 }
 
 
