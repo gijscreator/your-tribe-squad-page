@@ -100,6 +100,10 @@ header img {
     margin-left: 50px;
 }
 
+input::placeholder {
+    color: rgba(229, 229, 229, 0.782);
+    font-weight: 300;
+}
 #welcome-page-img {
     padding: 2rem;
 }
@@ -126,6 +130,20 @@ header img {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  right: 7%;
+  top: 47%;
+  width: 24px;  
+  height: 24px;
+  pointer-events: none; 
 }
 
 /*Mugshot styling Roxy-----------------------------------------------------------------------------------------------------------------*/
@@ -463,13 +481,13 @@ main h1 {
 }
 
 section input[type="search"] {
-    padding: 10px;
-    border: solid 1px #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    background-color: #22333B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
     font-size: 1rem;
     height: 50px;
-    outline: solid #fc0 0;
     width: 80vw;
     max-width: 300px;
     margin-top: 20px;
