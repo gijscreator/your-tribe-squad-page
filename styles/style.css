@@ -138,7 +138,7 @@ header img {
     text-align: center;
 }
 
-/*alles in deze container naast elkaar zetten en onder elkaar als geen ruimte meer in het midden van de pagina*/
+/*alles in deze container naast elkaar zetten en onder elkaar als geen ruimte meer in het midden van de pagina met beedtje ruimte aan de zijkant*/
 .mugshot-image-container {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +146,7 @@ header img {
     width: 90%;
 }
 
+/*plaatje neemt 22% op dat is ongeveer 4 per rij, ik wil dat ze niet vervormen maar vierkant blijven, niks buiten de vakjes zichtbaar, fotos horizontaal in het midden en verticaal iets uit elkaar*/
 .mugshot {
     width: 22%;
     aspect-ratio: 1 / 1;
@@ -155,41 +156,30 @@ header img {
     margin: 0.8rem auto;
 }
 
+/*plaatjes op de juiste plek zetten in het vierkant*/
 .mugshot img {
     position: absolute;
     display: block;
     transition: 0.5s ease-in-out;
 }
 
+/*als je niks doet moet de eerste foto te zien zijn*/
 .mugshot-first {
     opacity: 1;
 }
 
+/*als je niks doet moet de 2e foto niet te zien zijn*/
 .mugshot-after {
     opacity: 0;
 }
 
-.mugshot h3 {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    color: white;
-    z-index: 1000;
-}
-
-.docenten .link-icon {
-    position: absolute;
-    left: 10px;
-    top: 35px;
-    color: white;
-    z-index: 1;
-}
-
+/*ook de dingen in de figcaption moet niet zichtbaar zijn als je niks doet + soepele transition*/
 .mugshot figcaption {
     visibility: hidden;
     transition: 0.5s ease-in-out;
 }
 
+/*als je eroverheen hovert moet wel zichtbaar zijn*/
 .mugshot:hover figcaption {
     visibility: visible;
 }
@@ -255,6 +245,7 @@ header img {
     padding: 0px 20px;
 }
 
+/*als je eroverheen hovert wil ik een soort spotlight licht op de foto hebben*/
 .mugshot:hover::after {
     content: "";
     position: absolute;
@@ -262,9 +253,10 @@ header img {
     background: radial-gradient(circle at center,
             rgba(0, 0, 0, 0) 50%,
             rgba(0, 0, 0, 1) 100%);
-    pointer-events: none;
+    pointer-events: none; /*dit snap ik nog niet helemaal maar ga ik opzoeken*/
 }
 
+/*als je hovert moet de eerste foto niet zichtbaar zijn en de tweede wel */
 .mugshot-first:hover {
     opacity: 0;
 }
@@ -273,23 +265,7 @@ header img {
     opacity: 1;
 }
 
-article button {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    list-style: none;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-article button:hover {
-    background-color: rgb(175, 175, 175);
-    transition: 0.25s;
-}
-
+/*balkje over ogen op goede positie */
 .eye-bar {
     background-color: #000000;
     position: absolute;
@@ -301,6 +277,7 @@ article button:hover {
     transition: 0.5s ease;
 }
 
+/*alleen zichtbaar als je hovert */
 .mugshot:hover .eye-bar {
     opacity: 1;
 }
@@ -309,6 +286,7 @@ article button:hover {
     opacity: 1;
 }
 
+/*sommige mensen hebben een bril het hooft schijn of net een andere positie nodig voor het oogbalkje*/
 .angle {
     top: 25%;
     rotate: 15deg;
@@ -332,6 +310,23 @@ article button:hover {
 
 .container-docenten .mugshot {
     width: 28%;
+}
+/*button styling---------------------------------------------------------------------------------------------------------------------------*/
+article button {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+article button:hover {
+    background-color: rgb(175, 175, 175);
+    transition: 0.25s;
 }
 
 /*footer styling-------------------------------------------------------------------------------------------------------------------------------------*/
