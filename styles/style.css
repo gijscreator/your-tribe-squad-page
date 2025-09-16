@@ -500,6 +500,12 @@ section input[type="search"] {
     z-index: 1;
 }
 
+.gekketekst {
+    text-align: center;
+    background: linear-gradient(to bottom, red 50%, blue 50%);
+    color: transparent;
+    background-clip: text;
+}
 /* responsiveness-----------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1500px) {
     .mugshot-image-container {
