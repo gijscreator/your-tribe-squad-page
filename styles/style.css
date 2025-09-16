@@ -30,7 +30,9 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-
+h4{
+    visibility: hidden;
+}
 
 
 /*header styling*/
