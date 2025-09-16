@@ -33,8 +33,9 @@ h5 {
 }
 
 h4 {
-    visibility: hidden;
-    position: absolute;
+    /*sections en article hebben altijd een h1-h6 voor semantiek en toegankelijkheid daarom hebben we een niet zichtbare h4 op verschillende plekken gebruikt*/
+    visibility: hidden; /*maar je wil hem niet zien*/
+    position: absolute; /*en ook niet dat hij de flow van de website beinvloed*/
 }
 
 
@@ -93,27 +94,7 @@ header img {
     margin-right: -10px;
     margin-bottom: -12%;
 }
-
-/*Mugshot styling Roxy*/
-.mugshot-article-container h2 {
-    visibility: hidden;
-}
-
-.mugshot-article-container {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.mugshot-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 90%;
-}
-
+/*welkom stuk styling*/
 .welcome-page p {
     width: 500px;
     margin-left: 50px;
@@ -134,54 +115,37 @@ header img {
     margin-left: 50px;
 }
 
-.card-tekst1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    justify-self: left;
-    font-size: 1rem;
-    padding: 10px;
-    border-right: 2px solid white;
-    padding-right: 50%;
-    height: 65%;
-
-}
-
-.card-tekst2 {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-size: 1rem;
-    justify-self: right;
-    padding: 10px;
-
-}
-
-.card-tekst3 {
-    grid-column-start: 1;
-    grid-column: span 2;
-    grid-row-start: 2;
-    justify-self: center;
-    align-self: center;
-    font-size: .8rem;
-    padding: 5px 30px;
-    color: rgb(141, 232, 255);
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-}
-
-.card-tekst4 {
-    grid-column-start: 1;
-    grid-column: span 2;
-    grid-row-start: 3;
-    justify-self: center;
-    align-self: center;
-    font-size: .6rem;
-    padding: 0px 20px;
-}
-
 .background-collage img {
     width: 100%;
     height: auto;
     filter: blur(10px);
+}
+
+#paragraaf {
+    margin-bottom: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Mugshot styling Roxy*/
+.mugshot-article-container h {
+    visibility: hidden;
+}
+
+.mugshot-article-container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.mugshot-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
 }
 
 .mugshot {
@@ -232,8 +196,65 @@ header img {
     visibility: visible;
 }
 
-article h1 {
-    font-size: 5em;
+.card-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #000000;
+    border: 1px solid white;
+    z-index: 10000;
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    width: 60%;
+    height: 35%;
+    opacity: 0;
+    z-index: 100;
+    transition: 0.5s ease;
+}
+
+.card-tekst1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: left;
+    font-size: 1rem;
+    padding: 10px;
+    border-right: 2px solid white;
+    padding-right: 50%;
+    height: 65%;
+
+}
+
+.card-tekst2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 1rem;
+    justify-self: right;
+    padding: 10px;
+
+}
+
+.card-tekst3 {
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
+    font-size: .8rem;
+    padding: 5px 30px;
+    color: rgb(141, 232, 255);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.card-tekst4 {
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
+    font-size: .6rem;
+    padding: 0px 20px;
 }
 
 .mugshot:hover::after {
@@ -284,23 +305,6 @@ article button:hover {
 
 .mugshot:hover .eye-bar {
     opacity: 1;
-}
-
-.card-info {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: #000000;
-    border: 1px solid white;
-    z-index: 10000;
-    position: absolute;
-    bottom: 8%;
-    left: 20%;
-    width: 60%;
-    height: 35%;
-    opacity: 0;
-    z-index: 100;
-    transition: 0.5s ease;
 }
 
 .mugshot:hover .card-info {
@@ -432,13 +436,6 @@ main h1 {
     font-size: 3.5rem;
     color: #2c2c2c;
     position: relative;
-}
-
-#paragraaf {
-    margin-bottom: 300px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 .grid-image {
