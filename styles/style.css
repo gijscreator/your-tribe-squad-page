@@ -347,7 +347,7 @@ article button:hover {
 
 .footer-layout {
     display: flex;
-    margin: none;
+    margin: 0;
 }
 
 .logo {
@@ -444,6 +444,7 @@ main h1 {
 .grid-image {
     display: grid;
     position: relative;
+    margin: 0;
 }
 
 .overlay-text {
@@ -549,7 +550,7 @@ section input[type="search"] {
 
     .navigation {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
         justify-self: start;
         margin: 0px;
