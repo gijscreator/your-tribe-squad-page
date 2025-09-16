@@ -557,6 +557,10 @@ section input[type="search"] {
     header li {
         padding: 0px;
     }
+    
+    .navtekst {
+    font-size: .6rem;
+    }
 
     .logo {
         display: grid;
