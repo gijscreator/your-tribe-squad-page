@@ -95,20 +95,31 @@ header img {
     margin-bottom: -12%;
 }
 /*welkom stuk styling-----------------------------------------------------------------------------------------------------------------*/
+
 .text-blob {
-    position: relative;
-    grid-template-columns: 1fr;
-    grid-row-start: 1;
+    display: grid;
+    justify-items: center;
 }
 
 .welkomtekst {
-    text-align: center;
-    color: black;
+    display: flex;
+    place-items: center;
+    color: white;
+    background-color:#22333B;
     font-size: 2rem;
-    grid-row-start: 1;
-    z-index: 10;
-
+    height: 300px;
+    width:80%;
+    margin: 0;
+    border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%;
+    transition-duration: 2s;
 }
+
+.welkomtekst:hover {
+    transition-duration: 2s;
+    rotate: 45deg;
+    border-radius: 50% 50% 50% 50%;
+}
+
 /*searrch box styling-----------------------------------------------------------------------------------------------------------------*/
 input::placeholder {
     color: rgba(229, 229, 229, 0.782);
@@ -515,6 +526,9 @@ section input[type="search"] {
     .mugshot {
         width: 30%;
     }
+    .welkomtekst { 
+        height: 600px;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 786px) {
@@ -528,9 +542,12 @@ section input[type="search"] {
         align-items: center;
         margin-top: 20px
     }
-
     section input[type="search"] {
         width: 80vw;
+    }
+    .welkomtekst {
+        height: 300px;
+        padding: 20px;
     }
 
     .wrapper-location,
