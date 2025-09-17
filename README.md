@@ -1,16 +1,16 @@
-# --------------------------------------------------------------------------------------------------------Squad page 1I 
+# Squad page 1I 
 Voor de opdracht Squad page hebben wij, de CTRL+Crew, een website ontworpen en gemaakt voor squad 1i de instructies naar deze opdracht vind je hier:
 De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md)
 
 In deze readme laten presenteren wij ons gemaakte werk.
 
-# ----------------------------------------------------------------------------------------------------------Beschrijving
+# Beschrijving
 HIER KOMT NOG EEN MOCKUP VAN DE SITE ALS HIJ HELEMAAL KLAAR IS VOOR VRIJDAG
 Bekijk de website via deze link: edu.nl/quwey
 of bekijk hem snel via de QR code op je mobiel 
 ![alt text](qr_quwey.png)
 
-# ---------------------------------------------------------------------------------------------------------------Gebruik
+# Gebruik
 *header*
 In de header vind je het logo van ons team terug en een navigatie die je naar de verschillende onderdelen van onze website brengt. De navigatie-items hebben allemaal een hover voor interactie.
 
@@ -31,14 +31,14 @@ Onder de studenten hebben we ook alle docenten weergegeven met een hover effect.
 
 *Locaties op de HVA*
 Hier worden verschillende locaties op de hva laten zien als je er overheen hovert word er meer informatie getoont over de getooonde plek.
-# -------------------------------------------------------------------------------------Drie dingen waar we trots op zijn
+# Drie dingen waar we trots op zijn
 1. Zoekfunctie
 ![alt text](image-2.png)
 2. De mugshot hovers
 ![alt text](image.png)
 3. blob
 ![alt text](image-3.png)
-# --------------------------------------------------------------------------------------------------------------Het team
+# Het team
 Deze website is gemaakt door Gijs Nagtegaal en Roxy Fokker.
 https://github.com/gijscreator
 https://github.com/Rox-Codelabs
