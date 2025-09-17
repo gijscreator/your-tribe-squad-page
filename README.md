@@ -5,7 +5,7 @@ De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fd
 In deze readme laten presenteren wij ons gemaakte werk.
 
 # ----------------------------------------------------------------------------------------------------------Beschrijving
-
+HIER KOMT NOG EEN MOCKUP VAN DE SITE ALS HIJ HELEMAAL KLAAR IS VOOR VRIJDAG
 Bekijk de website via deze link: edu.nl/quwey
 of bekijk hem snel via de QR code op je mobiel 
 ![alt text](qr_quwey.png)
@@ -33,8 +33,11 @@ Onder de studenten hebben we ook alle docenten weergegeven met een hover effect.
 Hier worden verschillende locaties op de hva laten zien als je er overheen hovert word er meer informatie getoont over de getooonde plek.
 # -------------------------------------------------------------------------------------Drie dingen waar we trots op zijn
 1. Zoekfunctie
+![alt text](image-2.png)
 2. De mugshot hovers
+![alt text](image.png)
 3. blob
+![alt text](image-3.png)
 # --------------------------------------------------------------------------------------------------------------Het team
 Deze website is gemaakt door Gijs Nagtegaal en Roxy Fokker.
 https://github.com/gijscreator
