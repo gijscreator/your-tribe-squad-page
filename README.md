@@ -50,6 +50,6 @@ Onze breakdown schets en ontwerp kun je vinden in de issues van deze repo
 
 De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md)
 
-## -------------------------------------------------------------------------------------------------------------Licentie
+## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
