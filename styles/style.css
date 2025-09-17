@@ -67,7 +67,7 @@ header li {
 }
 
 header li:hover {
-    border-bottom: solid black 1px;
+    border-bottom: solid #22333B 1px;
 }
 
 header img {
@@ -75,6 +75,9 @@ header img {
     border-radius: 10px;
 }
 
+.waveheader {
+    height: 200px;
+}
 .wave3 {
     margin-bottom: -13%;
 }
@@ -96,10 +99,30 @@ header img {
 }
 /*welkom stuk styling-----------------------------------------------------------------------------------------------------------------*/
 
-.welkomtekst {
-    text-align: center;
-    font-size: 2rem;
+.text-blob {
+    display: grid;
+    justify-items: center;
 }
+
+.welkomtekst {
+    display: flex;
+    place-items: center;
+    color: white;
+    background-color:#22333B;
+    font-size: 1.5rem;
+    height: 500px;
+    width:60%;
+    margin: 0;
+    border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%;
+    transition-duration: 2s;
+}
+
+.welkomtekst:hover {
+    transition-duration: 2s;
+    rotate: 25deg;
+    border-radius: 50% 50% 50% 50%;
+}
+
 /*searrch box styling-----------------------------------------------------------------------------------------------------------------*/
 input::placeholder {
     color: rgba(229, 229, 229, 0.782);
@@ -110,7 +133,10 @@ input::placeholder {
   position: relative;
   display: inline-block;
 }
-
+.zoeken {
+    font-size: 1.2rem;
+    color: #22333B;
+}
 .search-box .search-icon {
   position: absolute;
   right: 7%;
@@ -162,6 +188,7 @@ input::placeholder {
 
 /*als je niks doet moet de 2e foto niet te zien zijn*/
 .mugshot-after {
+    transition-duration: 2s;
     opacity: 0;
 }
 
@@ -190,6 +217,7 @@ input::placeholder {
     height: 35%;
     opacity: 0;
     z-index: 100;
+    transition-duration: 2s;
 }
 
 .card-tekst1 {
@@ -198,7 +226,6 @@ input::placeholder {
     justify-self: left;
     font-size: 1rem;
     padding: 10px;
-    padding-right: 50%;
     height: 65%;
 
 }
@@ -248,10 +275,12 @@ input::placeholder {
 
 /*als je hovert moet de eerste foto niet zichtbaar zijn en de tweede wel */
 .mugshot-first:hover {
+    transition-duration: 2s;
     opacity: 0;
 }
 
 .mugshot-after:hover {
+    transition-duration: 2s;
     opacity: 1;
 }
 
@@ -264,19 +293,22 @@ input::placeholder {
     width: 35%;
     height: 8%;
     opacity: 0;
+    transition-duration: 2s;
     transition: 0.5s ease;
 }
 
 /*alleen zichtbaar als je hovert */
 .mugshot:hover .eye-bar {
+    transition-duration: 2s;
     opacity: 1;
 }
 
 .mugshot:hover .card-info {
+    transition-duration: 2s;
     opacity: 1;
 }
 
-/*sommige mensen hebben een bril het hooft schijn of net een andere positie nodig voor het oogbalkje*/
+/*sommige mensen hebben een bril het hooft schuin of net een andere positie nodig voor het oogbalkje*/
 .angle {
     top: 25%;
     rotate: 15deg;
@@ -306,11 +338,11 @@ article button {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: black;
+    color: #22333B;
     background-color: white;
     text-decoration: none;
     list-style: none;
-    border: 1px solid black;
+    border: 1px solid #22333B;
     border-radius: 5px;
 }
 
@@ -378,7 +410,7 @@ footer {
 .location-image {
     position: relative;
     width: 100%;
-    background: black;
+    background: #22333B;
     object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: 10px;
@@ -434,6 +466,7 @@ main h1 {
     text-align: center;
     height: 100%;
     width: 100%;
+    transition-duration: 2s;
     opacity: 0;
     transition: ease-in 0.3s;
     border-radius: 10px;
@@ -459,7 +492,7 @@ section input[type="search"] {
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: .7rem;
     height: 50px;
     width: 80vw;
     max-width: 300px;
@@ -469,8 +502,8 @@ section input[type="search"] {
 .meer-fotos {
     font-size: 1rem;
     background: none;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #22333B;
+    color: #22333B;
     border-radius: 50px;
     padding: 10px 20px;
     margin: 20px 0px;
@@ -478,7 +511,7 @@ section input[type="search"] {
 }
 
 .meer-fotos:hover {
-    background: black;
+    background: #22333B;
     color: white;
     transition-duration: .5s;
 }
@@ -490,7 +523,7 @@ section input[type="search"] {
 
 .gekketekst {
     text-align: center;
-    background: linear-gradient(to bottom, black 50%, blue 50%);
+    background: linear-gradient(to bottom, #22333B 50%, blue 50%);
     color: transparent;
     background-clip: text;
 }
@@ -506,6 +539,9 @@ section input[type="search"] {
     .mugshot {
         width: 30%;
     }
+    .welkomtekst { 
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 786px) {
@@ -519,9 +555,12 @@ section input[type="search"] {
         align-items: center;
         margin-top: 20px
     }
-
     section input[type="search"] {
         width: 80vw;
+    }
+    .welkomtekst {
+        height: 200px;
+        padding: 20px;
     }
 
     .wrapper-location,
@@ -531,7 +570,9 @@ section input[type="search"] {
         margin: 0px;
         gap: 10px;
     }
-
+    .waveheader {
+    height: 50px;
+   } 
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -576,6 +617,7 @@ section input[type="search"] {
     }
 
     .card-info {
+        transition-duration: 2s;
         opacity: 1;
     }
 
@@ -635,7 +677,7 @@ section input[type="search"] {
         align-self: center;
         font-size: .8rem;
         color: blue;
-        padding: 5px 10px;
+        padding: 5px 20%;
         border-bottom: 3px solid white;
         border-top: 3px solid white;
     }
