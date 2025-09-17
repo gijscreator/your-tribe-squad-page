@@ -188,6 +188,7 @@ input::placeholder {
 
 /*als je niks doet moet de 2e foto niet te zien zijn*/
 .mugshot-after {
+    transition-duration: 2s;
     opacity: 0;
 }
 
@@ -216,6 +217,7 @@ input::placeholder {
     height: 35%;
     opacity: 0;
     z-index: 100;
+    transition-duration: 2s;
 }
 
 .card-tekst1 {
@@ -291,6 +293,7 @@ input::placeholder {
     width: 35%;
     height: 8%;
     opacity: 0;
+    transition-duration: 2s;
     transition: 0.5s ease;
 }
 
@@ -463,6 +466,7 @@ main h1 {
     text-align: center;
     height: 100%;
     width: 100%;
+    transition-duration: 2s;
     opacity: 0;
     transition: ease-in 0.3s;
     border-radius: 10px;
