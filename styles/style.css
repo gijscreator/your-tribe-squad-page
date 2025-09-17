@@ -95,41 +95,11 @@ header img {
     margin-bottom: -12%;
 }
 /*welkom stuk styling-----------------------------------------------------------------------------------------------------------------*/
-.welcome-page p {
-    width: 500px;
-    margin-left: 50px;
-}
 
+/*searrch box styling-----------------------------------------------------------------------------------------------------------------*/
 input::placeholder {
     color: rgba(229, 229, 229, 0.782);
     font-weight: 300;
-}
-#welcome-page-img {
-    padding: 2rem;
-}
-
-.welcome-page img {
-    float: right;
-    height: 500px;
-    width: 500px;
-}
-
-.welcome-page h1 {
-    font-size: 50px;
-    margin-left: 50px;
-}
-
-.background-collage img {
-    width: 100%;
-    height: auto;
-    filter: blur(10px);
-}
-
-#paragraaf {
-    margin-bottom: 300px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 .search-box {
