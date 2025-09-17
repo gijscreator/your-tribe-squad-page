@@ -3,12 +3,17 @@ const studenten = document.querySelectorAll('.mugshot.student');
 const meerFotosKnop = document.querySelector('.meer-fotos');
 
 function getMaxVisible() {
-  if (window.innerWidth <= 600) { 
-    return 3;
-  } else {
+  const w = window.innerWidth;
+
+  if (w <= 790) {
     return 4;
+  } else if (w <= 1400) {
+    return 4;
+  } else {
+    return 6;
   }
 }
+
 
 function toonStandaard() {
   const maxVisible = getMaxVisible();
