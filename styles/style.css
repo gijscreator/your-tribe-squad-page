@@ -194,7 +194,6 @@ input::placeholder {
     justify-self: left;
     font-size: 1rem;
     padding: 10px;
-    border-right: 2px solid white;
     padding-right: 50%;
     height: 65%;
 
@@ -610,7 +609,6 @@ section input[type="search"] {
         justify-self: left;
         font-size: 1rem;
         padding: 10px;
-        border-right: 2px solid white;
         padding-right: 50%;
         height: 65%;
 
