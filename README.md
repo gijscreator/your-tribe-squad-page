@@ -1,5 +1,11 @@
 
-# Squad page
+# Squad page 1I 
+
+# Beschrijving
+# Drie dingen waar we trots op zijn
+# Het team
+
+
 
 Ontwerp en maak met een team een Squad Page met HTML, CSS en JS.
 
