@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{--bg:#0a0d16;--bg2:#0c1224;--text:#e7ecff;--muted:#a7b7ff;--red:#ff3140;--accent:#6aa9ff;--accent2:#b16cff;--gold:#ffd46a;--asphalt:#0f1320;--line:#cfe3ff;--ghost:#ffffff0f}
+    html,body{margin:0;height:100%;background:radial-gradient(1600px 900px at 15% 10%,#0d1430 0%,#0a0d16 55%,#070b14 100%);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    .site{min-height:420vh}
+    .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);background:linear-gradient(180deg,#0f1530d0,#0b1026a0 80%,#0b102600);border-bottom:1px solid #ffffff1a}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+    .logo{width:28px;height:18px;background:linear-gradient(90deg,var(--red),#ff6a7a);border-radius:4px;box-shadow:0 6px 18px #ff314044}
+    .brand span{font-size:1.05rem;color:#fff}
+    .tabs{display:flex;gap:16px;margin-left:auto}
+    .tab{font-size:.95rem;color:var(--muted);padding:8px 10px;border-radius:10px;transition:all .25s ease}
+    .tab:hover{color:#fff;background:#ffffff12}
+    .cta{margin-left:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#07101f;font-weight:700;box-shadow:0 10px 24px #6aa9ff33, inset 0 0 0 1px #ffffff22}
+    .hero{position:relative;display:grid;place-items:center;height:64vh;overflow:hidden}
+    .hero h1{font-size:clamp(28px,5.2vw,64px);letter-spacing:.5px;margin:18px 0 6px}
+    .sub{opacity:.8;color:#cbd6ff}
+    .badges{display:flex;gap:10px;margin-top:14px}
+    .badge{font-size:.85rem;padding:6px 10px;border-radius:999px;background:#ffffff12;border:1px solid #ffffff1f}
+    .stage{position:sticky;top:0;height:100vh;display:grid;place-items:center}
+    .grid{position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(to right,#ffffff14 1px,transparent 1px),linear-gradient(to bottom,#ffffff14 1px,transparent 1px);background-size:60px 60px}
+    .panel{position:absolute;inset:20px auto auto 50%;transform:translateX(460px);width:min(340px,85vw);background:linear-gradient(180deg,#141a33cc,#0e1430cc);border:1px solid #ffffff1a;border-radius:16px;box-shadow:0 20px 60px #0007;padding:14px 14px 10px;display:flex;flex-direction:column;gap:10px}
+    .panel .title{display:flex;align-items:center;justify-content:space-between;font-weight:700;letter-spacing:.4px}
+    .title .flag{width:18px;height:12px;background:linear-gradient(90deg,#fff 0 25%,#00a650 25% 50%,#ce1126 50% 75%,#000 75%);border-radius:2px}
+    .table{display:grid;grid-template-columns:24px 1fr 62px;gap:8px;align-items:center;margin-top:6px}
+    .cell{padding:6px 8px;border-radius:8px;background:#ffffff08;border:1px solid #ffffff12}
+    .pos{font-weight:700;color:#fff;text-align:center}
+    .name{color:#dfe8ff}
+    .gap{font-feature-settings:"tnum" on;justify-self:end;color:#b7c5ff}
+    .metric{display:flex;justify-content:space-between;align-items:center;background:#ffffff0a;border:1px solid #ffffff12;border-radius:12px;padding:10px 12px;font-weight:600}
+    .metric .val{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;color:#fff}
+    .sponsors{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{font-size:.8rem;padding:6px 10px;border-radius:999px;background:#ffffff10;border:1px dashed #ffffff22}
+    svg{width:min(1320px,92vw);height:min(2600px,280vh)}
+    .asphalt{fill:none;stroke:#0b0f19;stroke-width:36;filter:url(#shadow)}
+    .track{fill:none;stroke:url(#trackGradient);stroke-width:16;stroke-linecap:round;stroke-linejoin:round;filter:url(#glow)}
+    .white-line{fill:none;stroke:#e7efff;stroke-opacity:.8;stroke-width:3;stroke-dasharray:14 10}
+    .drs{fill:none;stroke:var(--gold);stroke-width:4;stroke-dasharray:8 12}
+    .start{fill:none;stroke:#fff;stroke-width:4;stroke-dasharray:10 8}
+    .pit{fill:none;stroke:#7fd7ff;stroke-width:8;stroke-linecap:round;filter:url(#glow)}
+    #car{filter:url(#carShadow)}
+    .car-body{fill:url(#carPaint);stroke:#0d0f1a;stroke-width:1}
+    .car-window{fill:#d8e9ff;opacity:.95}
+    .wheel{fill:#1a1e2b}
+    .wheel.inner{fill:#2d3347}
+    .kerb{fill:none;stroke-width:8;stroke-linecap:round}
+    .kerb.red{stroke:#ff3140}
+    .kerb.white{stroke:#fff}
+    .hud-mini{position:absolute;right:24px;bottom:24px;background:linear-gradient(180deg,#141a33cc,#0e1430cc);border:1px solid #ffffff1a;border-radius:16px;padding:10px 12px;font-size:.9rem;display:flex;gap:14px;align-items:center}
+    .light{width:10px;height:10px;border-radius:2px;background:#24ff6a;box-shadow:0 0 14px #24ff6a66}
+    .footer{max-width:1200px;margin:0 auto;padding:40px 20px;color:#9fb0ff;opacity:.9}
+    .footer-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+    .footer .card{background:#ffffff08;border:1px solid #ffffff14;border-radius:16px;padding:14px}
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="brand"><div class="logo"></div><span>F1 LIVE</span></div>
+        <div class="tabs">
+          <div class="tab">Home</div>
+          <div class="tab">Schedule</div>
+          <div class="tab">Standings</div>
+          <div class="tab">Teams</div>
+          <div class="tab">Tickets</div>
+        </div>
+        <div class="cta">Watch Live</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Grand Prix Circuit — Cursor Controlled Hot Lap</h1>
+        <div class="sub">Hover the track to steer. Scroll to cruise when not hovering. Optimized for silky motion and precision.</div>
+        <div class="badges">
+          <div class="badge">DRS Zones</div>
+          <div class="badge">Pit Lane</div>
+          <div class="badge">Sector Timing</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage">
+      <div class="grid"></div>
+
+      <svg id="track-svg" viewBox="0 0 1200 2600" aria-label="F1 circuit">
+        <defs>
+          <linearGradient id="trackGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#8ec5ff"/>
+            <stop offset="50%" stop-color="#c190ff"/>
+            <stop offset="100%" stop-color="#7fd7ff"/>
+          </linearGradient>
+          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="6" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="10" result="b"/>
+            <feOffset dy="8"/>
+            <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="carShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
+          </filter>
+          <linearGradient id="carPaint" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ff3140"/>
+            <stop offset="100%" stop-color="#ff8fa0"/>
+          </linearGradient>
+        </defs>
+
+        <path id="track-asphalt" class="asphalt" d="M 600 80 C 360 140 780 300 520 420 S 320 620 620 720 960 860 640 960 360 1100 640 1200 1030 1360 680 1460 320 1600 640 1730 980 1860 600 1990 260 2120 600 2250 980 2380 640 2470 420 2530 600 2580"/>
+        <path id="track-path" class="track" d="M 600 80 C 360 140 780 300 520 420 S 320 620 620 720 960 860 640 960 360 1100 640 1200 1030 1360 680 1460 320 1600 640 1730 980 1860 600 1990 260 2120 600 2250 980 2380 640 2470 420 2530 600 2580"/>
+        <path class="white-line" d="M 600 80 C 360 140 780 300 520 420 S 320 620 620 720 960 860 640 960 360 1100 640 1200 1030 1360 680 1460 320 1600 640 1730 980 1860 600 1990 260 2120 600 2250 980 2380 640 2470 420 2530 600 2580"/>
+        <path id="hit-path" d="M 600 80 C 360 140 780 300 520 420 S 320 620 620 720 960 860 640 960 360 1100 640 1200 1030 1360 680 1460 320 1600 640 1730 980 1860 600 1990 260 2120 600 2250 980 2380 640 2470 420 2530 600 2580" fill="none" stroke="transparent" stroke-width="60"/>
+
+        <path class="drs" d="M 520 420 S 320 620 620 720"/>
+        <path class="drs" d="M 640 1200 1030 1360"/>
+        <path class="start" d="M 600 80 520 420"/>
+
+        <path id="pit-lane" class="pit" d="M 560 330 C 400 380 460 500 500 620 520 700 520 760 520 820"/>
+
+        <path class="kerb red" d="M 620 720 960 860"/>
+        <path class="kerb white" d="M 640 960 360 1100"/>
+        <path class="kerb red" d="M 640 1730 980 1860"/>
+        <path class="kerb white" d="M 600 1990 260 2120"/>
+
+        <g id="car" transform="translate(600,80)">
+          <g transform="translate(-12,-22)"><circle class="wheel" r="7" cx="0" cy="0"/><circle class="wheel inner" r="3" cx="0" cy="0"/></g>
+          <g transform="translate(12,22)"><circle class="wheel" r="7" cx="0" cy="0"/><circle class="wheel inner" r="3" cx="0" cy="0"/></g>
+          <rect class="car-body" x="-22" y="-12" rx="8" ry="8" width="44" height="24"/>
+          <rect class="car-window" x="-8" y="-8" rx="4" ry="4" width="16" height="16"/>
+        </g>
+      </svg>
+
+      <aside class="panel">
+        <div class="title"><span>Live Standings</span><span class="flag"></span></div>
+        <div class="table">
+          <div class="cell pos">1</div><div class="cell name">VER</div><div class="cell gap">+0.000</div>
+          <div class="cell pos">2</div><div class="cell name">NOR</div><div class="cell gap">+1.214</div>
+          <div class="cell pos">3</div><div class="cell name">LEC</div><div class="cell gap">+2.003</div>
+          <div class="cell pos">4</div><div class="cell name">HAM</div><div class="cell gap">+4.552</div>
+          <div class="cell pos">5</div><div class="cell name">ALO</div><div class="cell gap">+5.912</div>
+        </div>
+        <div class="metric"><span>Lap</span><span class="val" id="lap">1 / 58</span></div>
+        <div class="metric"><span>Speed</span><span class="val" id="speed">0 km/h</span></div>
+        <div class="metric"><span>DRS</span><span class="val" id="drs">Armed</span></div>
+        <div class="sponsors"><div class="chip">P Zero</div><div class="chip">HevoFuel</div><div class="chip">AeroTech</div></div>
+      </aside>
+
+      <div class="hud-mini"><div class="light" id="light"></div><div id="status">Scroll to auto–drive • Hover to steer</div></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="card">Ultra–smooth cursor following mapped to the circuit spline with path–aware rotation.</div>
+        <div class="card">When the cursor leaves the circuit, page scroll maps to car progress for presentation flows.</div>
+        <div class="card">Single‑file build. No external assets. Drop into your editor and run.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const svg=document.getElementById('track-svg');
+    const path=document.getElementById('track-path');
+    const hit=document.getElementById('hit-path');
+    const car=document.getElementById('car');
+    const lapEl=document.getElementById('lap');
+    const speedEl=document.getElementById('speed');
+    const drsEl=document.getElementById('drs');
+    const light=document.getElementById('light');
+    const status=document.getElementById('status');
+    const pathLength=path.getTotalLength();
+    const SAMPLES=2200; const sample=new Array(SAMPLES);
+    for(let i=0;i<SAMPLES;i++){const l=i/(SAMPLES-1)*pathLength;const p=path.getPointAtLength(l);sample[i]={x:p.x,y:p.y,l}}
+    let hovering=false;let targetL=0;let currentL=0;let v=0;const dt=1/60;const stiffness=28;const damping=13;let lastT=performance.now();
+    function clamp(v,lo,hi){return Math.max(lo,Math.min(hi,v))}
+    function placeCar(len){const p=path.getPointAtLength(len);const ahead=path.getPointAtLength(Math.min(len+1,pathLength));const angle=Math.atan2(ahead.y-p.y,ahead.x-p.x)*180/Math.PI;car.setAttribute('transform',`translate(${p.x.toFixed(2)},${p.y.toFixed(2)}) rotate(${angle.toFixed(2)})`)}
+    function nearestLengthTo(x,y){let bestI=0,bestD=1/0;for(let i=0;i<SAMPLES;i+=8){const dx=sample[i].x-x,dy=sample[i].y-y;const d=dx*dx+dy*dy;if(d<bestD){bestD=d;bestI=i}}let s=Math.max(0,bestI-14),e=Math.min(SAMPLES-1,bestI+14);for(let i=s;i<=e;i++){const dx=sample[i].x-x,dy=sample[i].y-y;const d=dx*dx+dy*dy;if(d<bestD){bestD=d;bestI=i}}return sample[bestI].l}
+    function screenToSvgPoint(evt){const pt=svg.createSVGPoint();pt.x=evt.clientX;pt.y=evt.clientY;const ctm=svg.getScreenCTM().inverse();return pt.matrixTransform(ctm)}
+    function animate(){const x=currentL;const a=stiffness*(targetL-x)-damping*v;v+=a*dt;currentL=clamp(x+v*dt,0,pathLength);placeCar(currentL);const now=performance.now();const dtms=now-lastT;lastT=now;const ds=Math.abs(v*dt);const kmh=Math.min(350,Math.round(ds*2));speedEl.textContent=kmh+" km/h";const lap=Math.floor(currentL/pathLength)+1;lapEl.textContent=lap+" / 58";const inDrs=isInDrs(currentL);drsEl.textContent=inDrs?"Active":"Armed";light.style.background=inDrs?"#24ff6a":"#ffd46a";light.style.boxShadow=inDrs?"0 0 14px #24ff6a66":"0 0 14px #ffd46a66";requestAnimationFrame(animate)}
+    function isInDrs(l){if(l>pathLength*0.18&&l<pathLength*0.28) return true; if(l>pathLength*0.47&&l<pathLength*0.57) return true; return false}
+    hit.addEventListener('pointerenter',()=>{hovering=true;status.textContent='Steering: Cursor'});
+    hit.addEventListener('pointerleave',()=>{hovering=false;status.textContent='Auto–drive: Scroll'});
+    hit.addEventListener('pointermove',e=>{if(!hovering) return;const p=screenToSvgPoint(e);targetL=clamp(nearestLengthTo(p.x,p.y),0,pathLength)});
+    function updateTargetFromScroll(){if(hovering) return;const doc=document.documentElement;const scrollable=(doc.scrollHeight-doc.clientHeight)||1;const progress=clamp(window.scrollY/scrollable,0,1);targetL=progress*pathLength}
+    window.addEventListener('scroll',updateTargetFromScroll,{passive:true});
+    window.addEventListener('resize',updateTargetFromScroll);
+    updateTargetFromScroll();placeCar(0);requestAnimationFrame(animate);
+    window.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowRight'){targetL=clamp(targetL+pathLength*0.01,0,pathLength)}else if(e.key==='ArrowUp'||e.key==='ArrowLeft'){targetL=clamp(targetL-pathLength*0.01,0,pathLength)}});
+  </script>
+</body>
+</html>
