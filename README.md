@@ -8,6 +8,7 @@ In deze readme laten presenteren wij ons gemaakte werk.
 HIER KOMT NOG EEN MOCKUP VAN DE SITE ALS HIJ HELEMAAL KLAAR IS VOOR VRIJDAG
 Bekijk de website via deze link: edu.nl/quwey
 of bekijk hem snel via de QR code op je mobiel 
+
 ![alt text](qr_quwey.png)
 
 # Gebruik
