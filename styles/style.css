@@ -484,7 +484,7 @@ section input[type="search"] {
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: .7rem;
     height: 50px;
     width: 80vw;
     max-width: 300px;
