@@ -273,10 +273,12 @@ input::placeholder {
 
 /*als je hovert moet de eerste foto niet zichtbaar zijn en de tweede wel */
 .mugshot-first:hover {
+    transition-duration: 2s;
     opacity: 0;
 }
 
 .mugshot-after:hover {
+    transition-duration: 2s;
     opacity: 1;
 }
 
@@ -294,14 +296,16 @@ input::placeholder {
 
 /*alleen zichtbaar als je hovert */
 .mugshot:hover .eye-bar {
+    transition-duration: 2s;
     opacity: 1;
 }
 
 .mugshot:hover .card-info {
+    transition-duration: 2s;
     opacity: 1;
 }
 
-/*sommige mensen hebben een bril het hooft schijn of net een andere positie nodig voor het oogbalkje*/
+/*sommige mensen hebben een bril het hooft schuin of net een andere positie nodig voor het oogbalkje*/
 .angle {
     top: 25%;
     rotate: 15deg;
@@ -609,6 +613,7 @@ section input[type="search"] {
     }
 
     .card-info {
+        transition-duration: 2s;
         opacity: 1;
     }
 
