@@ -35,7 +35,7 @@ Hier worden verschillende locaties op de hva laten zien als je er overheen hover
 1. Zoekfunctie
 
 ![alt text](image-2.png)
-2. De mugshot hovers
+2. De mugshot hovers 
 
 ![alt text](image.png)
 3. blob
