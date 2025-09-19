@@ -1,7 +1,5 @@
 # Squad page 1I 
-Voor de opdracht Squad page hebben wij, de CTRL+Crew, een website ontworpen en gemaakt voor squad 1i de instructies naar deze opdracht vind je hier:
-De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md)
-
+Voor de opdracht Squad page hebben wij, de CTRL+Crew, een website ontworpen en gemaakt voor squad 1i.
 In deze readme presenteren wij ons gemaakte werk.
 
 # Beschrijving
