@@ -3,8 +3,6 @@ Voor de opdracht Squad page hebben wij, de CTRL+Crew, een website ontworpen en g
 In deze readme presenteren wij ons gemaakte werk.
 
 # Beschrijving
-![alt text](image-4.png)
-![alt text](image-5.png)
 ![alt text](<Web 1920 – 79-1.png>)
 Bekijk de website via deze link: edu.nl/quwey
 De live link: https://github.com/gijscreator/your-tribe-squad-page 
@@ -55,3 +53,11 @@ De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fd
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
+
+
+
+
+
+
+![alt text](image-4.png)
+![alt text](image-5.png)
