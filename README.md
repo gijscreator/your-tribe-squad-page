@@ -3,8 +3,7 @@ Voor de opdracht Squad page hebben wij, de CTRL+Crew, een website ontworpen en g
 In deze readme presenteren wij ons gemaakte werk.
 
 # Beschrijving
-![alt text](image-10.png)
-![alt text](<Web 1920 – 79-1.png>)
+![alt text](<Web 1920 – 79-3.png>)
 Bekijk de website via deze link: edu.nl/quwey
 De live link: https://github.com/gijscreator/your-tribe-squad-page 
 of bekijk hem snel via de QR code op je mobiel 
@@ -39,7 +38,6 @@ Hier worden verschillende locaties op de hva laten zien als je er overheen hover
 ![alt text](image-6.png)
 3. blob
 ![alt text](image-3.png)
-![alt text](image-7.png)
 # Het team
 Deze website is gemaakt door Gijs Nagtegaal en Roxy Fokker.
 https://github.com/gijscreator
@@ -57,8 +55,3 @@ This project is licensed under the terms of the [MIT license](./LICENSE).
 
 
 
-
-
-
-![alt text](image-4.png)
-![alt text](image-5.png)
