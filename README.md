@@ -6,6 +6,7 @@ In deze readme presenteren wij ons gemaakte werk.
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 Bekijk de website via deze link: edu.nl/quwey
+De live link: https://github.com/gijscreator/your-tribe-squad-page 
 of bekijk hem snel via de QR code op je mobiel 
 
 ![alt text](qr_quwey.png)
