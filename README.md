@@ -33,11 +33,11 @@ Onder de studenten hebben we ook alle docenten weergegeven met een hover effect.
 Hier worden verschillende locaties op de hva laten zien als je er overheen hovert word er meer informatie getoont over de getooonde plek.
 # Drie dingen waar we trots op zijn
 1. Zoekfunctie
-![alt text](image-12.png)
+
 2. De mugshot hovers 
-![alt text](image-6.png)
+
 3. blob
-![alt text](image-3.png)
+
 # Het team
 Deze website is gemaakt door Gijs Nagtegaal en Roxy Fokker.
 https://github.com/gijscreator
