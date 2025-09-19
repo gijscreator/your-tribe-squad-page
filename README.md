@@ -5,7 +5,7 @@ De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fd
 In deze readme presenteren wij ons gemaakte werk.
 
 # Beschrijving
-HIER KOMT NOG EEN MOCKUP VAN DE SITE ALS HIJ HELEMAAL KLAAR IS VOOR VRIJDAG
+![alt text](image-4.png)
 Bekijk de website via deze link: edu.nl/quwey
 of bekijk hem snel via de QR code op je mobiel 
 
