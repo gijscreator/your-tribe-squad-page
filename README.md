@@ -34,13 +34,15 @@ Hier worden verschillende locaties op de hva laten zien als je er overheen hover
 # Drie dingen waar we trots op zijn
 1. Zoekfunctie
 
-![alt text](image-2.png)
+![alt text](image-6.png)
 2. De mugshot hovers 
 
 ![alt text](image.png)
 3. blob
 
 ![alt text](image-3.png)
+
+![alt text](image-7.png)
 # Het team
 Deze website is gemaakt door Gijs Nagtegaal en Roxy Fokker.
 https://github.com/gijscreator
