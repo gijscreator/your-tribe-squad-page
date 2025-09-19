@@ -593,7 +593,9 @@ section input[type="search"] {
     .navtekst {
     font-size: .6rem;
     }
-
+    figcaption {
+        display:grid;
+    }
     .logo {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -621,7 +623,6 @@ section input[type="search"] {
     }
 
     .card-info {
-        transition-duration: 2s;
         opacity: 1;
     }
 
@@ -640,7 +641,12 @@ section input[type="search"] {
     .roxy {
         margin-top: 5px;
     }
-
+    .mugshot figcaption {
+        visibility: visible;
+    }
+    .mugshot:hover figcaption {
+        visibility: visible;
+    }
     .logo-madeby {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -672,7 +678,9 @@ section input[type="search"] {
         padding: 10px;
 
     }
-
+    .hidden {
+        display:none;
+    }
     .card-tekst3 {
         grid-column-start: 1;
         grid-column: span 2;
