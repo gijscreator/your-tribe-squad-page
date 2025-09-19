@@ -6,6 +6,7 @@ In deze readme presenteren wij ons gemaakte werk.
 
 # Beschrijving
 ![alt text](image-4.png)
+![alt text](image-5.png)
 Bekijk de website via deze link: edu.nl/quwey
 of bekijk hem snel via de QR code op je mobiel 
 
